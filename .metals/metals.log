@@ -1,0 +1,62 @@
+[0m2021.04.10 09:19:07 INFO  Started: Metals version 0.10.1 in workspace '/home/timmiller/myfolder/Project[0]/project[0]' for client vscode 1.55.1.[0m
+[0m2021.04.10 09:19:07 INFO  time: initialize in 0.28s[0m
+[0m2021.04.10 09:19:07 WARN  Build server is not auto-connectable.[0m
+[0m2021.04.10 09:19:09 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals2986459751628028303/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.04.10 09:19:10 INFO  [info] welcome to sbt 1.4.9 (Private Build Java 1.8.0_282)[0m
+[0m2021.04.10 09:19:12 INFO  [info] loading settings for project project-0--build-build from metals.sbt ...[0m
+[0m2021.04.10 09:19:12 INFO  [info] loading project definition from /home/timmiller/myfolder/Project[0]/project[0]/project/project[0m
+[0m2021.04.10 09:19:14 INFO  [info] loading settings for project project-0--build from metals.sbt ...[0m
+[0m2021.04.10 09:19:14 INFO  [info] loading project definition from /home/timmiller/myfolder/Project[0]/project[0]/project[0m
+[0m2021.04.10 09:19:16 INFO  [success] Generated .bloop/project-0--build.json[0m
+[0m2021.04.10 09:19:16 INFO  [success] Total time: 1 s, completed Apr 10, 2021 9:19:16 AM[0m
+[0m2021.04.10 09:19:17 INFO  [info] loading settings for project project-0- from build.sbt ...[0m
+[0m2021.04.10 09:19:17 INFO  [info] set current project to hello-world (in build file:/home/timmiller/myfolder/Project%5B0%5D/project%5B0%5D/)[0m
+[0m2021.04.10 09:19:17 INFO  [success] Generated .bloop/project-0--test.json[0m
+[0m2021.04.10 09:19:17 INFO  [success] Generated .bloop/project-0-.json[0m
+[0m2021.04.10 09:19:17 INFO  [success] Total time: 0 s, completed Apr 10, 2021 9:19:17 AM[0m
+[0m2021.04.10 09:19:18 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.04.10 09:19:18 INFO  time: ran 'sbt bloopInstall' in 8.43s[0m
+[0m2021.04.10 09:19:18 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher1866448400476997518/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading 2 projects from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop'...
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0-.json'
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0--test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.3.
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar
+[0m[32m[D][0m Missing analysis file for project 'project-0-'
+[0m[32m[D][0m Missing analysis file for project 'project-0--test'
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher1866448400476997518/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher1866448400476997518/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.10 09:19:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.10 09:19:18 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher8026712348596201874/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher8026712348596201874/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher8026712348596201874/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.10 09:19:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.10 09:19:18 INFO  time: Connected to build server in 0.26s[0m
+[0m2021.04.10 09:19:18 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.04.10 09:19:19 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.04.10 09:19:20 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.10 09:19:21 INFO  time: indexed workspace in 2.68s[0m
+[0m2021.04.10 09:19:21 INFO  Deduplicating compilation of project-0- from bsp client 'Metals 0.10.1' (since 2.837s)[0m
+[0m2021.04.10 09:19:21 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.10 09:19:23 INFO  time: compiled project-0- in 1.81s[0m
+[0m2021.04.10 09:20:12 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.10 09:20:12 INFO  time: compiled project-0- in 0.61s[0m
+[0m2021.04.10 09:20:19 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.10 09:20:19 INFO  time: compiled project-0- in 0.42s[0m
+Apr 10, 2021 9:21:16 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
