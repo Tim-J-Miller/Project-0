@@ -12,7 +12,9 @@ The objective of the game is to accumulate as much gold as possible. To accompli
 The program looks for a .JSON file which holds the Player IDs and Character names of every player that has played on the machine.
 
 ### If the expected .JSON with relevent data is found
-The player is asked to enter their ID and choose the character they wish to play. 
+The player is asked to enter their ID and choose the character they wish to play.
+##### if character entered does not correspond to the entered ID
+The player may try to import the character from the DB. If the character is not in the DB the player will be asked to create a new character who will be added to the .JSON and the DB.
 ##### if ID is not found on in the .JSON (new player/ no .JSON found/ .JSON empty)
 The player may then try to import a save from the DB using their Player ID. If there is no entry for the Player ID is found in the DB then the player will be asked to make a new unique ID which will be added to the .JSON and the DB.
 
@@ -20,7 +22,7 @@ The player may then try to import a save from the DB using their Player ID. If t
 Players are directed to the tavern. In the tavern players are faced with their first choice via a CLI loop.
 
 ```
-[playerName], you have [followerCount] followers. What would you like to do?
+[playerName], you have [followerCount] followers and [goldTotal] gold. What would you like to do?
     Hire another follower?
         How much?
         Never mind.
@@ -56,7 +58,7 @@ If at any point a follower's HP reaches 0, they are deleted from the DB.
 | ------ | ------ |------ |
 | CharVar(30) | CharVar(30) | Int |
 | Primary Key | | |
-
+#### Follower Table
 | Player ID | Follower Name | HP|
 | ------ | ------ |------ |
 | CharVar(30) | CharVar(30) | Int |
