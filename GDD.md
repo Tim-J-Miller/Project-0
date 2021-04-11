@@ -1,5 +1,5 @@
 # Game Design Document
-.
+
 This document will outline the proposed design for a command line interface game which reads from/writes to a .JSON file and a connected database.
 
 The core design is based on the [Balloon Analogue Risk Task](http://www.impulsivity.org/measurement/BART), wherein participants are presented with a button and a balloon. Each press of the button inflates the balloon and increases the participants' reward until either they step away and recieve their reward, or pop the balloon and recieve nothing.
