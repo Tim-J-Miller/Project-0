@@ -12,7 +12,7 @@ The objective of the game is to accumulate as much gold as possible. To accompli
 The program looks for a .JSON file which holds the Player IDs and Character names of every player that has played on the machine.
 
 ### If the expected .JSON with relevent data is found
-The player is asked to enter their ID and choose the character they wish to play.
+The player is asked to enter their ID.
 ##### if character entered does not correspond to the entered ID
 The player may try to import the character from the DB. If the character is not in the DB the player will be asked to create a new character who will be added to the .JSON and the DB.
 ##### if ID is not found on in the .JSON (new player/ no .JSON found/ .JSON empty)
