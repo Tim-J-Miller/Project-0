@@ -1,0 +1,637 @@
+[0m2021.04.10 09:19:07 INFO  Started: Metals version 0.10.1 in workspace '/home/timmiller/myfolder/Project[0]/project[0]' for client vscode 1.55.1.[0m
+[0m2021.04.10 09:19:07 INFO  time: initialize in 0.28s[0m
+[0m2021.04.10 09:19:07 WARN  Build server is not auto-connectable.[0m
+[0m2021.04.10 09:19:09 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals2986459751628028303/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.04.10 09:19:10 INFO  [info] welcome to sbt 1.4.9 (Private Build Java 1.8.0_282)[0m
+[0m2021.04.10 09:19:12 INFO  [info] loading settings for project project-0--build-build from metals.sbt ...[0m
+[0m2021.04.10 09:19:12 INFO  [info] loading project definition from /home/timmiller/myfolder/Project[0]/project[0]/project/project[0m
+[0m2021.04.10 09:19:14 INFO  [info] loading settings for project project-0--build from metals.sbt ...[0m
+[0m2021.04.10 09:19:14 INFO  [info] loading project definition from /home/timmiller/myfolder/Project[0]/project[0]/project[0m
+[0m2021.04.10 09:19:16 INFO  [success] Generated .bloop/project-0--build.json[0m
+[0m2021.04.10 09:19:16 INFO  [success] Total time: 1 s, completed Apr 10, 2021 9:19:16 AM[0m
+[0m2021.04.10 09:19:17 INFO  [info] loading settings for project project-0- from build.sbt ...[0m
+[0m2021.04.10 09:19:17 INFO  [info] set current project to hello-world (in build file:/home/timmiller/myfolder/Project%5B0%5D/project%5B0%5D/)[0m
+[0m2021.04.10 09:19:17 INFO  [success] Generated .bloop/project-0--test.json[0m
+[0m2021.04.10 09:19:17 INFO  [success] Generated .bloop/project-0-.json[0m
+[0m2021.04.10 09:19:17 INFO  [success] Total time: 0 s, completed Apr 10, 2021 9:19:17 AM[0m
+[0m2021.04.10 09:19:18 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.04.10 09:19:18 INFO  time: ran 'sbt bloopInstall' in 8.43s[0m
+[0m2021.04.10 09:19:18 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher1866448400476997518/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading 2 projects from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop'...
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0-.json'
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0--test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.3.
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar
+[0m[32m[D][0m Missing analysis file for project 'project-0-'
+[0m[32m[D][0m Missing analysis file for project 'project-0--test'
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher1866448400476997518/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher1866448400476997518/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.10 09:19:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.10 09:19:18 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher8026712348596201874/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher8026712348596201874/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher8026712348596201874/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.10 09:19:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.10 09:19:18 INFO  time: Connected to build server in 0.26s[0m
+[0m2021.04.10 09:19:18 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.04.10 09:19:19 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.04.10 09:19:20 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.10 09:19:21 INFO  time: indexed workspace in 2.68s[0m
+[0m2021.04.10 09:19:21 INFO  Deduplicating compilation of project-0- from bsp client 'Metals 0.10.1' (since 2.837s)[0m
+[0m2021.04.10 09:19:21 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.10 09:19:23 INFO  time: compiled project-0- in 1.81s[0m
+[0m2021.04.10 09:20:12 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.10 09:20:12 INFO  time: compiled project-0- in 0.61s[0m
+[0m2021.04.10 09:20:19 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.10 09:20:19 INFO  time: compiled project-0- in 0.42s[0m
+Apr 10, 2021 9:21:16 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+[0m2021.04.10 13:26:37 INFO  shutting down Metals[0m
+[0m2021.04.10 13:26:37 INFO  Shut down connection with build server.[0m
+[0m2021.04.10 13:26:37 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.04.10 21:38:18 INFO  Started: Metals version 0.10.1 in workspace '/home/timmiller/myfolder/Project[0]/project[0]' for client vscode 1.55.1.[0m
+[0m2021.04.10 21:38:18 INFO  time: initialize in 0.35s[0m
+[0m2021.04.10 21:38:18 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher2606703080212437839/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.04.10 21:38:18 INFO  skipping build import with status 'Installed'[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.8...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop'...
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0--test.json'
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0-.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.3.
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'project-0-', 'project-0--test'
+[0m[32m[D][0m Missing analysis file for project 'project-0--test'
+[0m[32m[D][0m Loading previous analysis for 'project-0-' from '/home/timmiller/myfolder/Project[0]/project[0]/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher2606703080212437839/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher2606703080212437839/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.10 21:38:21 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.10 21:38:21 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher5888680624691432707/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher5888680624691432707/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher5888680624691432707/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.10 21:38:21 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.10 21:38:21 INFO  time: Connected to build server in 2.97s[0m
+[0m2021.04.10 21:38:21 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.04.10 21:38:22 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.04.10 21:38:22 INFO  time: indexed workspace in 1.17s[0m
+[0m2021.04.10 21:40:20 INFO  shutting down Metals[0m
+[0m2021.04.10 21:40:20 INFO  Shut down connection with build server.[0m
+[0m2021.04.10 21:40:20 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.04.11 17:22:16 INFO  Started: Metals version 0.10.1 in workspace '/home/timmiller/myfolder/Project[0]/project[0]' for client vscode 1.55.1.[0m
+[0m2021.04.11 17:22:16 INFO  time: initialize in 0.37s[0m
+[0m2021.04.11 17:22:16 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher1539144712285768791/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.04.11 17:22:16 INFO  skipping build import with status 'Installed'[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.8...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop'...
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0-.json'
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0--test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.3.
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'project-0--test', 'project-0-'
+[0m[32m[D][0m Missing analysis file for project 'project-0--test'
+[0m[32m[D][0m Loading previous analysis for 'project-0-' from '/home/timmiller/myfolder/Project[0]/project[0]/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher1539144712285768791/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher1539144712285768791/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.11 17:22:19 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.11 17:22:19 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher2453698135241242425/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher2453698135241242425/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher2453698135241242425/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.11 17:22:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.11 17:22:20 INFO  time: Connected to build server in 2.96s[0m
+[0m2021.04.11 17:22:20 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.04.11 17:22:20 INFO  time: Imported build in 0.1s[0m
+[0m2021.04.11 17:22:20 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.04.11 17:22:21 INFO  time: indexed workspace in 1.2s[0m
+[0m2021.04.11 17:22:48 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.11 17:22:49 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:3:30: stale bloop error: invalid unicode escape
+    println("Hello, World! \u00A")
+                             ^[0m
+[0m2021.04.11 17:22:49 INFO  time: compiled project-0- in 1.21s[0m
+[0m2021.04.11 17:23:48 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:3:30: stale bloop error: invalid unicode escape
+    println("Hello, World! \u00A")
+                             ^[0m
+[0m2021.04.11 17:23:48 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:3:30: stale bloop error: invalid unicode escape
+    println("Hello, World! \u00A")
+                             ^[0m
+[0m2021.04.11 17:23:51 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.11 17:23:51 INFO  time: compiled project-0- in 0.13s[0m
+[0m2021.04.11 17:24:14 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.11 17:24:15 INFO  time: compiled project-0- in 1.34s[0m
+[0m2021.04.11 17:24:15 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.11 17:24:17 INFO  time: compiled project-0- in 0.69s[0m
+[0m2021.04.11 17:24:20 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/dap-server.trace.json[0m
+[0m2021.04.11 17:24:20 INFO  Listening for transport dt_socket at address: 35161[0m
+[0m2021.04.11 17:24:20 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/dap-client.trace.json[0m
+[0m2021.04.11 17:24:20 INFO  Starting debug proxy for [Main][0m
+[0m2021.04.11 17:24:20 INFO  Trying to attach to remote debuggee VM localhost:35161 .[0m
+[0m2021.04.11 17:24:20 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.04.11 17:24:20 INFO  Hello, World! ©[0m
+[0m2021.04.11 17:24:20 INFO  Canceling debug proxy for [Main][0m
+[0m2021.04.11 17:24:45 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.11 17:24:45 INFO  time: compiled project-0- in 0.54s[0m
+[0m2021.04.11 17:24:46 INFO  Deduplicating compilation of project-0- from bsp client 'Metals 0.10.1' (since 2m 26.495s)[0m
+[0m2021.04.11 17:24:46 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/dap-server.trace.json[0m
+[0m2021.04.11 17:24:46 INFO  Listening for transport dt_socket at address: 35933[0m
+[0m2021.04.11 17:24:46 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/dap-client.trace.json[0m
+[0m2021.04.11 17:24:46 INFO  Starting debug proxy for [Main][0m
+[0m2021.04.11 17:24:46 INFO  Trying to attach to remote debuggee VM localhost:35933 .[0m
+[0m2021.04.11 17:24:46 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.04.11 17:24:46 INFO  Hello, World! ὇A[0m
+[0m2021.04.11 17:24:47 INFO  Canceling debug proxy for [Main][0m
+[0m2021.04.11 17:25:34 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.11 17:25:34 INFO  time: compiled project-0- in 0.51s[0m
+[0m2021.04.11 17:25:38 INFO  Deduplicating compilation of project-0- from bsp client 'Metals 0.10.1' (since 3m 18.209s)[0m
+[0m2021.04.11 17:25:38 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/dap-server.trace.json[0m
+[0m2021.04.11 17:25:38 INFO  Listening for transport dt_socket at address: 39563[0m
+[0m2021.04.11 17:25:38 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/dap-client.trace.json[0m
+[0m2021.04.11 17:25:38 INFO  Starting debug proxy for [Main][0m
+[0m2021.04.11 17:25:38 INFO  Trying to attach to remote debuggee VM localhost:39563 .[0m
+[0m2021.04.11 17:25:38 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.04.11 17:25:38 INFO  Hello, World! 👺[0m
+[0m2021.04.11 17:25:38 INFO  Canceling debug proxy for [Main][0m
+Apr 11, 2021 5:27:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 144
+[0m2021.04.11 17:29:33 INFO  shutting down Metals[0m
+[0m2021.04.11 17:29:33 INFO  Shut down connection with build server.[0m
+[0m2021.04.11 17:29:33 INFO  Shut down connection with build server.[0m
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.04.11 19:49:09 INFO  Started: Metals version 0.10.1 in workspace '/home/timmiller/myfolder/Project[0]/project[0]' for client vscode 1.55.1.[0m
+[0m2021.04.11 19:49:10 INFO  time: initialize in 0.37s[0m
+[0m2021.04.11 19:49:09 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.04.11 19:49:10 WARN  no build target for: /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala[0m
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher7491981393742671110/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.04.11 19:49:10 INFO  skipping build import with status 'Installed'[0m
+Waiting for the bsp connection to come up...
+[0m2021.04.11 19:49:11 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+Waiting for the bsp connection to come up...
+[0m2021.04.11 19:49:13 INFO  time: code lens generation in 2.65s[0m
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.8...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop'...
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0-.json'
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0--test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.3.
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'project-0--test', 'project-0-'
+[0m[32m[D][0m Missing analysis file for project 'project-0--test'
+[0m[32m[D][0m Loading previous analysis for 'project-0-' from '/home/timmiller/myfolder/Project[0]/project[0]/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher7491981393742671110/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher7491981393742671110/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.11 19:49:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.11 19:49:13 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher3646068099926521379/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher3646068099926521379/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher3646068099926521379/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.11 19:49:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.11 19:49:13 INFO  time: Connected to build server in 3.34s[0m
+[0m2021.04.11 19:49:13 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.04.11 19:49:13 INFO  time: Imported build in 0.1s[0m
+[0m2021.04.11 19:49:13 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.04.11 19:49:13 INFO  time: indexed workspace in 0.87s[0m
+something's wrong: no file:///home/timmiller/myfolder/Project%5B0%5D/project%5B0%5D/src/main/scala/Main.scala in Array[String]RangePosition(file:///home/timmiller/myfolder/Project%5B0%5D/project%5B0%5D/src/main/scala/Main.scala, 31, 31, 44)
+[0m2021.04.11 19:55:26 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.11 19:55:27 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:25: stale bloop error: illegal character '\ud83c'
+    val emoji: String = 🎂
+                        ^[0m
+[0m2021.04.11 19:55:27 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:25: stale bloop error: illegal character '\ud83c'
+    val emoji: String = 🎂
+                        ^[0m
+[0m2021.04.11 19:55:27 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:26: stale bloop error: illegal character '\udf82'
+    val emoji: String = 🎂
+                         ^[0m
+[0m2021.04.11 19:55:27 INFO  time: compiled project-0- in 1.35s[0m
+[0m2021.04.11 19:55:32 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:25: stale bloop error: illegal character '\ud83c'
+    val emoji: String = 🎂
+                        ^[0m
+[0m2021.04.11 19:55:32 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:26: stale bloop error: illegal character '\udf82'
+    val emoji: String = 🎂
+                         ^[0m
+[0m2021.04.11 19:55:32 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:25: stale bloop error: illegal character '\ud83c'
+    val emoji: String = 🎂
+                        ^[0m
+[0m2021.04.11 19:55:32 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:26: stale bloop error: illegal character '\udf82'
+    val emoji: String = 🎂
+                         ^[0m
+[0m2021.04.11 19:55:34 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:25: stale bloop error: illegal character '\ud83c'
+    val emoji: String = 🎂
+                        ^[0m
+[0m2021.04.11 19:55:34 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:26: stale bloop error: illegal character '\udf82'
+    val emoji: String = 🎂
+                         ^[0m
+[0m2021.04.11 19:55:34 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.11 19:55:34 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:25: stale bloop error: illegal character '\ud83c'
+    var emoji: String = 🎂
+                        ^[0m
+[0m2021.04.11 19:55:34 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:25: stale bloop error: illegal character '\ud83c'
+    var emoji: String = 🎂
+                        ^[0m
+[0m2021.04.11 19:55:34 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:26: stale bloop error: illegal character '\udf82'
+    var emoji: String = 🎂
+                         ^[0m
+[0m2021.04.11 19:55:34 INFO  time: compiled project-0- in 0.18s[0m
+[0m2021.04.11 19:55:38 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:25: stale bloop error: illegal character '\ud83c'
+    var emoji: String = 🎂
+                        ^[0m
+[0m2021.04.11 19:55:38 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:26: stale bloop error: illegal character '\udf82'
+    var emoji: String = 🎂
+                         ^[0m
+[0m2021.04.11 19:55:38 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:25: stale bloop error: illegal character '\ud83c'
+    var emoji: String = 🎂
+                        ^[0m
+[0m2021.04.11 19:55:38 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:26: stale bloop error: illegal character '\udf82'
+    var emoji: String = 🎂
+                         ^[0m
+[0m2021.04.11 19:55:39 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:25: stale bloop error: illegal character '\ud83c'
+    var emoji: String = 🎂
+                        ^[0m
+[0m2021.04.11 19:55:39 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:26: stale bloop error: illegal character '\udf82'
+    var emoji: String = 🎂
+                         ^[0m
+[0m2021.04.11 19:55:39 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.11 19:55:39 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: illegal character '\ud83c'
+    var emoji = 🎂
+                ^[0m
+[0m2021.04.11 19:55:39 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: illegal character '\ud83c'
+    var emoji = 🎂
+                ^[0m
+[0m2021.04.11 19:55:39 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:18: stale bloop error: illegal character '\udf82'
+    var emoji = 🎂
+                 ^[0m
+[0m2021.04.11 19:55:39 INFO  time: compiled project-0- in 0.14s[0m
+[0m2021.04.11 19:55:51 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: illegal character '\ud83c'
+    var emoji = 🎂
+                ^[0m
+[0m2021.04.11 19:55:51 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:18: stale bloop error: illegal character '\udf82'
+    var emoji = 🎂
+                 ^[0m
+[0m2021.04.11 19:55:51 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: illegal character '\ud83c'
+    var emoji = 🎂
+                ^[0m
+[0m2021.04.11 19:55:51 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:18: stale bloop error: illegal character '\udf82'
+    var emoji = 🎂
+                 ^[0m
+[0m2021.04.11 19:55:53 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: illegal character '\ud83c'
+    var emoji = 🎂
+                ^[0m
+[0m2021.04.11 19:55:53 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:18: stale bloop error: illegal character '\udf82'
+    var emoji = 🎂
+                 ^[0m
+[0m2021.04.11 19:55:53 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: illegal character '\ud83c'
+    var emoji = 🎂
+                ^[0m
+[0m2021.04.11 19:55:53 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:18: stale bloop error: illegal character '\udf82'
+    var emoji = 🎂
+                 ^[0m
+[0m2021.04.11 19:55:58 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.11 19:55:59 INFO  time: compiled project-0- in 1.5s[0m
+[0m2021.04.11 19:56:34 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.11 19:56:34 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:56:34 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:56:34 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:56:34 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:56:34 INFO  time: compiled project-0- in 0.16s[0m
+something's wrong: no file:///home/timmiller/myfolder/Project%5B0%5D/project%5B0%5D/src/main/scala/Main.scala in Array[String]RangePosition(file:///home/timmiller/myfolder/Project%5B0%5D/project%5B0%5D/src/main/scala/Main.scala, 31, 31, 44)
+[0m2021.04.11 19:56:44 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:56:44 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:56:44 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:56:44 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:56:44 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:56:44 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:56:45 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:56:45 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:56:45 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:56:45 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:56:45 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:56:45 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:56:46 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:56:46 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:56:46 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:56:46 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:56:46 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:56:46 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:56:46 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:56:46 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:56:46 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:56:47 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:56:47 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:56:47 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:56:54 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:56:54 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:56:54 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:56:57 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:56:57 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:56:57 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:56:57 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:56:57 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:56:57 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:56:57 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:56:57 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:56:57 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:56:57 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:56:57 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:56:57 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:56:57 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:56:57 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:56:57 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:56:58 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:56:58 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:56:58 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:56:58 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:56:58 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:56:58 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:56:59 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:56:59 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:56:59 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:57:00 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:57:00 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:57:00 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:57:02 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:57:02 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:57:02 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:57:02 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:57:02 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:57:02 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:57:02 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:57:02 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:57:02 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:57:04 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:57:04 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:57:04 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:57:04 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:57:04 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:57:04 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:57:04 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:57:04 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:57:04 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:57:05 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                ^[0m
+[0m2021.04.11 19:57:05 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: stale bloop error: illegal character '\udf82'
+    var emoji = '🎂'
+                  ^[0m
+[0m2021.04.11 19:57:05 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: stale bloop error: unclosed character literal (or use " not ' for string literal)
+    var emoji = '🎂'
+                   ^[0m
+[0m2021.04.11 19:57:06 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.11 19:57:06 INFO  time: compiled project-0- in 0.81s[0m
+[0m2021.04.11 19:57:27 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.11 19:57:27 INFO  time: compiled project-0- in 0.64s[0m
+[0m2021.04.11 19:57:35 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.11 19:57:35 INFO  time: compiled project-0- in 0.58s[0m
+Apr 11, 2021 7:57:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+[0m2021.04.11 20:01:19 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.11 20:01:19 INFO  time: compiled project-0- in 0.48s[0m
+[0m2021.04.11 20:47:52 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.11 20:47:52 INFO  time: compiled project-0- in 0.31s[0m
+[0m2021.04.11 21:09:02 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.11 21:09:02 INFO  time: compiled project-0- in 0.96s[0m
+something's wrong: no file:///home/timmiller/myfolder/Project%5B0%5D/project%5B0%5D/src/main/scala/Main.scala in Array[String]RangePosition(file:///home/timmiller/myfolder/Project%5B0%5D/project%5B0%5D/src/main/scala/Main.scala, 31, 31, 44)
+[0m2021.04.11 21:09:43 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.11 21:09:43 INFO  time: compiled project-0- in 0.73s[0m
+Apr 11, 2021 9:16:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 606

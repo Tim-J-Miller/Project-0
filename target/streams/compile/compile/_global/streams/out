@@ -1,0 +1,10 @@
+[0m[[0m[31merror[0m] [0m[0m/home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:17: unclosed character literal (or use " not ' for string literal)[0m
+[0m[[0m[31merror[0m] [0m[0m    var emoji = '🎂'[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:19: illegal character '\udf82'[0m
+[0m[[0m[31merror[0m] [0m[0m    var emoji = '🎂'[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Main.scala:4:20: unclosed character literal (or use " not ' for string literal)[0m
+[0m[[0m[31merror[0m] [0m[0m    var emoji = '🎂'[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
