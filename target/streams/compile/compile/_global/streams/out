@@ -1,6 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/GameCli.scala:15:66: missing argument list for method apply in trait IterableFactory[0m
-[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
-[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `apply _` or `apply(_)` instead of `apply`.[0m
-[0m[[0m[31merror[0m] [0m[0m        p = Player(id, characterName, 10, followers = ArrayBuffer[Follower])[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:27:9: not found: value conn[0m
+[0m[[0m[31merror[0m] [0m[0m        conn.close[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

@@ -59,6 +59,7 @@ object GameCli{
                     townMenuLoop=false
                 }
                 save(p)
+                gameLoop = false
            }
 
      }
