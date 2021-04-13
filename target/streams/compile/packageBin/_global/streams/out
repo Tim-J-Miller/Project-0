@@ -1,7 +1,31 @@
 [0m[[0m[0mdebug[0m] [0m[0mPackaging /home/timmiller/myfolder/Project[0]/project[0]/target/scala-2.13/hello-world_2.13-1.0.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/timmiller/myfolder/Project[0]/project[0]/target/scala-2.13/classes/Main.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/timmiller/myfolder/Project[0]/project[0]/target/scala-2.13/classes/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Project0[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/timmiller/myfolder/Project[0]/project[0]/target/scala-2.13/classes/Project0[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Project0/DBUtil.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/timmiller/myfolder/Project[0]/project[0]/target/scala-2.13/classes/Project0/DBUtil.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Project0/Cli.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/timmiller/myfolder/Project[0]/project[0]/target/scala-2.13/classes/Project0/Cli.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Project0/Player$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/timmiller/myfolder/Project[0]/project[0]/target/scala-2.13/classes/Project0/Player$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Project0/FileUtil$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/timmiller/myfolder/Project[0]/project[0]/target/scala-2.13/classes/Project0/FileUtil$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Project0/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/timmiller/myfolder/Project[0]/project[0]/target/scala-2.13/classes/Project0/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Project0/DBUtil$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/timmiller/myfolder/Project[0]/project[0]/target/scala-2.13/classes/Project0/DBUtil$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Project0/Follower.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/timmiller/myfolder/Project[0]/project[0]/target/scala-2.13/classes/Project0/Follower.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Project0/Follower$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/timmiller/myfolder/Project[0]/project[0]/target/scala-2.13/classes/Project0/Follower$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Project0/GameCli.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/timmiller/myfolder/Project[0]/project[0]/target/scala-2.13/classes/Project0/GameCli.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Project0/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/timmiller/myfolder/Project[0]/project[0]/target/scala-2.13/classes/Project0/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Project0/FileUtil.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/timmiller/myfolder/Project[0]/project[0]/target/scala-2.13/classes/Project0/FileUtil.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Project0/GameCli$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/timmiller/myfolder/Project[0]/project[0]/target/scala-2.13/classes/Project0/GameCli$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Project0/Player.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/timmiller/myfolder/Project[0]/project[0]/target/scala-2.13/classes/Project0/Player.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
