@@ -5,8 +5,8 @@ import java.sql.DriverManager
 
 object Main {
   def main(args: Array[String]):Unit= {
-    println("Hello, World! 👺")
-     
+    println("Hello, \t World! 👺")
+    
     
     // //manually load driver
     //   classOf[org.postgresql.Driver].newInstance()
