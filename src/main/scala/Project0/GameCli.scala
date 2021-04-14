@@ -11,9 +11,9 @@ object GameCli{
     //********DO NOT TOUCH
 
     val commandArgPattern: Regex = "(\\w+)\\s+(\\w+)\\s*(.*)".r
-    def run(id: String, characterName: String, goldTotal: Int):Unit = {
+    def run(player: Player):Unit = {
         
-        p = Player(id, characterName, goldTotal, followers = new ArrayBuffer[Follower])
+        p = player
 
         
     /*      functions for handling followers
@@ -42,11 +42,13 @@ object GameCli{
            //print all followers
            p.followers.foreach(x => println(s"${x.name} has ${x.HP} hp"))
     */      
-           var gameLoop = true
-           var townMenuLoop = true
-           var tavernMenuLoop = false
-           var dungeonMenuLoop = false
-           while(gameLoop){
+            var gameLoop = true
+            var townMenuLoop = true
+            var tavernMenuLoop = false
+            var dungeonMenuLoop = false
+            var dungeonFloor = 1
+            var dungeonLoot = 0
+            while(gameLoop){
                 while(townMenuLoop){
                     printTownMenuOptions()
                     var input = StdIn.readLine()
@@ -121,8 +123,6 @@ object GameCli{
                     }
                 }
                 while(dungeonMenuLoop){
-                    var dungeonFloor = 1
-                    var dungeonLoot = 0
                     var rand = new Random
                     printDungeonMenuOptions(dungeonFloor, dungeonLoot)
                     var input = StdIn.readLine()
@@ -137,6 +137,8 @@ object GameCli{
                                 dungeonMenuLoop = false
                                 tavernMenuLoop = false
                                 townMenuLoop = true
+                                dungeonFloor = 1
+                                dungeonLoot = 0
                             }
                         }
                         case commandArgPattern(cmd1, cmd2, arg) if (cmd1.equalsIgnoreCase("Leave") && (cmd2.equalsIgnoreCase("dungeon")))=>{
@@ -144,6 +146,8 @@ object GameCli{
                             dungeonMenuLoop = false
                             tavernMenuLoop = false
                             townMenuLoop = true
+                            dungeonFloor = 1
+                            dungeonLoot = 0
                         }
                         case _=> {
                             println("Failed to parse a command")
@@ -165,7 +169,7 @@ object GameCli{
     }
     def hireFollower(hirePrice: Int) = {
         val rand = new Random
-        val listNames = List("(⌐■_■)", "ᕦ(ò_óˇ)ᕤ", "🐱‍👤", "༼ つ ◕_◕ ༽つ", "🤖")
+        val listNames = List("(⌐■_■)", "ᕦ(ò_óˇ)ᕤ", "🐱", "༼ つ ◕_◕ ༽つ", "🤖", "🐺")
         if(p.goldTotal >= hirePrice && hirePrice != 0){
             p.followers.addOne(Follower(listNames(rand.nextInt(listNames.length)), hirePrice * (10 + rand.nextInt((10 - 5) + 1))))
             p.goldTotal = p.goldTotal - hirePrice
@@ -187,7 +191,7 @@ object GameCli{
     def printTownMenuOptions():Unit = {
         List(
             "You find yourself in the town square",
-            s"You have ${p.followers.length} followers",
+            s"You have ${p.goldTotal} gold and ${p.followers.length} followers",
             "What would you like to do?\n",
             "Follower list: Check the status of your followers",
             "Go to tavern: hire some followers who will fight on your behaf",
@@ -210,6 +214,7 @@ object GameCli{
     def printDungeonMenuOptions(floor: Int, loot: Int):Unit ={
         List(
             s"You find yourself in floor number $floor of the dungeon and your followers have gathered $loot gold",
+            s"${p.followers.length} followers still survive",
             "What would you like to do?\n",
             "Push Through: your followers will clear the way to the next floor\n\t there's more gold to be had but risk loosing followers",
             "Leave dungeon: return to town to add the gathered gold to your own"

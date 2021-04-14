@@ -6,7 +6,8 @@ import java.sql.DriverManager
 object Main {
   def main(args: Array[String]):Unit= {
     println("Hello, \t World! 👺")
-    
+    var p = Player("Tim", "Heros", 750)
+    GameCli.run(p)
     
     // //manually load driver
     //   classOf[org.postgresql.Driver].newInstance()

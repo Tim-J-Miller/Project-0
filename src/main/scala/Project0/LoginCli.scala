@@ -2,10 +2,13 @@ package Project0
 
 import scala.io.StdIn
 import scala.util.matching.Regex
+import scala.collection.mutable.ArrayBuffer
 
 class Cli{
     
     val commandArgPattern: Regex = "(\\w+)\\s*(.*)".r
+    
+    var p = Player()
 
     def welcomeMenu(): Unit ={
         printWelcome()
@@ -39,7 +42,7 @@ class Cli{
             }
         }
         println("Welcome to the game, visit the tavern first to aquire some followers before entering the dungeon")
-        GameCli.run(playerID, charName, goldTotal) 
+        GameCli.run(p) 
     }
     
     def loginMenu():String = {
