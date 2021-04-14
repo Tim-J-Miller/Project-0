@@ -121,18 +121,51 @@ object GameCli{
                     }
                 }
                 while(dungeonMenuLoop){
-                    printDungeonMenuOptions()
+                    var dungeonFloor = 1
+                    var dungeonLoot = 0
+                    var rand = new Random
+                    printDungeonMenuOptions(dungeonFloor, dungeonLoot)
                     var input = StdIn.readLine()
-                    dungeonMenuLoop=false
+                    input match {
+                        case commandArgPattern(cmd1, cmd2, arg) if (cmd1.equalsIgnoreCase("Push") && (cmd2.equalsIgnoreCase("through")))=>{
+                            val successfullyAdvanced = pushFurtherIntoDungeon(dungeonFloor)
+                            if (successfullyAdvanced) {
+                                dungeonFloor = dungeonFloor + 1
+                                dungeonLoot = dungeonLoot + dungeonFloor * rand.nextInt(5)
+                            }
+                            else {
+                                dungeonMenuLoop = false
+                                tavernMenuLoop = false
+                                townMenuLoop = true
+                            }
+                        }
+                        case commandArgPattern(cmd1, cmd2, arg) if (cmd1.equalsIgnoreCase("Leave") && (cmd2.equalsIgnoreCase("dungeon")))=>{
+                            p.goldTotal = p.goldTotal + dungeonLoot
+                            dungeonMenuLoop = false
+                            tavernMenuLoop = false
+                            townMenuLoop = true
+                        }
+                        case _=> {
+                            println("Failed to parse a command")
+                        }
+                    }
                 }
-                save(p)
-                gameLoop = false
            }
 
      }
+    def pushFurtherIntoDungeon(floor: Int):Boolean = {
+        val rand = new Random
+        p.followers.foreach(x => {
+            if (rand.nextInt(100)>floor){
+                x.HP = x.HP - rand.nextInt(10)
+            }
+        })
+        p.followers = p.followers.filter(x => x.HP > 0)
+        if (p.followers.length > 0) true else false
+    }
     def hireFollower(hirePrice: Int) = {
         val rand = new Random
-        val listNames = List("Rico", "Tailor", "Ryan", "Henry", "Michael", "Michele", "Sara", "Magnolia", "(⌐■_■)", "ᕦ(ò_óˇ)ᕤ", "🐱‍👤")
+        val listNames = List("(⌐■_■)", "ᕦ(ò_óˇ)ᕤ", "🐱‍👤", "༼ つ ◕_◕ ༽つ", "🤖")
         if(p.goldTotal >= hirePrice && hirePrice != 0){
             p.followers.addOne(Follower(listNames(rand.nextInt(listNames.length)), hirePrice * (10 + rand.nextInt((10 - 5) + 1))))
             p.goldTotal = p.goldTotal - hirePrice
@@ -159,8 +192,8 @@ object GameCli{
             "Follower list: Check the status of your followers",
             "Go to tavern: hire some followers who will fight on your behaf",
             "Go to dungeon: lead your followers into the dungeon to find riches",
-            "Save: save the game 💾",
-            "Exit: exit the game 🙋‍♂"
+            "Save: save the game",
+            "Exit: exit the game"
         ).foreach(println)
     }
     def printTavernMenuOptions():Unit = {
@@ -170,12 +203,17 @@ object GameCli{
             "What would you like to do?\n",
             "Hire follower [gold amount]: Offer the specified amount of gold to hire a new follower \n\t (larger amounts will higher stronger followers)",
             "Leave tavern: return to the town square",
-            "Save: save the game 💾",
-            "Exit: exit the game 🙋‍♂"
+            "Save: save the game",
+            "Exit: exit the game"
         ).foreach(println)
     }
-    def printDungeonMenuOptions():Unit ={
-
+    def printDungeonMenuOptions(floor: Int, loot: Int):Unit ={
+        List(
+            s"You find yourself in floor number $floor of the dungeon and your followers have gathered $loot gold",
+            "What would you like to do?\n",
+            "Push Through: your followers will clear the way to the next floor\n\t there's more gold to be had but risk loosing followers",
+            "Leave dungeon: return to town to add the gathered gold to your own"
+        ).foreach(println)
     }
 }
 
