@@ -42,7 +42,7 @@ class Cli{
             }
         }
         println("Welcome to the game, visit the tavern first to aquire some followers before entering the dungeon")
-        GameCli.run(p) 
+        GameCli.run() 
     }
     
     def loginMenu():String = {
@@ -83,6 +83,10 @@ class Cli{
         ""
     }
 
+    def delete(player: Player) = {
+        //drop player from DB
+        println(player)
+    }
     def printWelcome(): Unit = {
         println("Welcome to Project 0 CLI")
     }

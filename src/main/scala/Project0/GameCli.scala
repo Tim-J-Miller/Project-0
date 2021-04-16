@@ -11,9 +11,10 @@ object GameCli{
     //********DO NOT TOUCH
 
     val commandArgPattern: Regex = "(\\w+)\\s+(\\w+)\\s*(.*)".r
-    def run(player: Player):Unit = {
+    //def run(player: Player):Unit = {
+    def run():Unit = {
         
-        p = player
+        //p = player
 
         
     /*      functions for handling followers
@@ -224,4 +225,4 @@ object GameCli{
 
 case class Follower(val name: String, var HP: Int = 10)
 
-case class Player(val id:String = "", val name: String = "", var goldTotal: Int = 0, var followers: ArrayBuffer[Follower] = ArrayBuffer())
+case class Player(var playerName:String = "", var characterName: String = "", var goldTotal: Int = 0, var followers: ArrayBuffer[Follower] = ArrayBuffer())
