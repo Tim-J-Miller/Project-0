@@ -7,7 +7,9 @@ import java.sql.Connection
 object Main {
   def main(args: Array[String]):Unit= {
     println("Hello, \t World! 👺")
-
+    val dbURL = sys.env("DBURL")
+    val dbNAME = sys.env("DBNAME")
+    val dbPASS = sys.env("DBPASS")
 
 
     //var p = Player("Tim", "Heros", 750)
@@ -16,20 +18,20 @@ object Main {
     // Dao.getPlayer("Tim")
     // GameCli.run()
     
-    // //manually load driver
-    //   classOf[org.postgresql.Driver].newInstance()
+    //manually load driver
+      classOf[org.postgresql.Driver].newInstance()
       
-    //   //use JDBC's DriverManager to get a connection. JDBC is DB agnostic
-    //   val conn = DriverManager.getConnection("jdbc:postgresql://localhost:5433/P-0", "postgres", "postgres")
+      //use JDBC's DriverManager to get a connection. JDBC is DB agnostic
+      val conn = DriverManager.getConnection(dbURL, dbNAME, dbPASS)
 
-    //   //use drivermanager to get a connection
-    //   //use the connection to prepare a sql statement
-    //   val stmt = conn.prepareStatement("SELECT * FROM players;")
-    //   stmt.execute()
-    //   //afterexecuting the statement, use it to get a resultset
-    //   val rs = stmt.getResultSet()
-    //   while(rs.next()){
-    //     println(rs.getString(1) + " " + rs.getString(2) + " " + rs.getString(3)+ " " + rs.getString(4))//retrieve parts of records off the resultset
-    //   }
+      //use drivermanager to get a connection
+      //use the connection to prepare a sql statement
+      val stmt = conn.prepareStatement("SELECT * FROM players;")
+      stmt.execute()
+      //afterexecuting the statement, use it to get a resultset
+      val rs = stmt.getResultSet()
+      while(rs.next()){
+        println(rs.getString(1) + " " + rs.getString(2) + " " + rs.getString(3)+ " " + rs.getString(4))//retrieve parts of records off the resultset
+      }
   }
 }

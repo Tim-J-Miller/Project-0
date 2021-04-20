@@ -6,6 +6,9 @@ import java.sql.Connection
 
 object Dao {
     var conn:Connection = null
+    val dbURL = sys.env("DBURL")
+    val dbNAME = sys.env("DBNAME")
+    val dbPASS = sys.env("DBPASS")
     def run():Unit = {
 
     }
@@ -14,7 +17,7 @@ object Dao {
         classOf[org.postgresql.Driver].newInstance()
         try {
             //use JDBC's DriverManager to get a connection. JDBC is DB agnostic
-            conn = DriverManager.getConnection("")
+            conn = DriverManager.getConnection(dbURL, dbNAME, dbPASS)
             Some(conn)
 
         }
@@ -26,7 +29,7 @@ object Dao {
         }
     }
     def getPlayer(idNumber: Int):Boolean = {
-        var conOpt:Option[Connection] = getConnection()
+        val conOpt:Option[Connection] = getConnection()
         if (conOpt == None) {
             false
         }
@@ -58,18 +61,16 @@ object Dao {
         }
     }
     def getPlayer(playerName: String):Boolean = {  
-        var conOpt:Option[Connection] = getConnection()
+        val conOpt:Option[Connection] = getConnection()
         if (conOpt == None) {
             false
         }
         else {
             try{
-                //use drivermanager to get a connection
-                //use the connection to prepare a sql statement
                 val stmt = conOpt.get.prepareStatement("SELECT * FROM players WHERE player_name = ?;")
                 stmt.setString(1, playerName)
                 stmt.execute()
-                //afterexecuting the statement, use it to get a resultset
+                
                 val rs = stmt.getResultSet()
                 while(rs.next()){
                     GameCli.p.playerName = rs.getString("player_name")
@@ -90,18 +91,16 @@ object Dao {
         }
     }
     def getFollowers() = {
-        var conOpt:Option[Connection] = getConnection()
+        val conOpt:Option[Connection] = getConnection()
         if (conOpt == None || GameCli.p.playerName == "") {
             false
         }
         else {
             try{
-                //use drivermanager to get a connection
-                //use the connection to prepare a sql statement
                 val stmt = conOpt.get.prepareStatement("SELECT follower_name, hp FROM followers LEFT JOIN players ON players.player_id = followers.player_id WHERE player_name = ?;")
                 stmt.setString(1, GameCli.p.playerName)
                 stmt.execute()
-                //afterexecuting the statement, use it to get a resultset
+                
                 val rs = stmt.getResultSet()
                 while(rs.next()){
                     GameCli.p.followers.addOne(Follower(rs.getString("follower_name"), rs.getString("hp").toInt))
@@ -118,5 +117,23 @@ object Dao {
                 conOpt.get.close()
             }
         }
+    }
+    def createPlayer(playerName: String, characterName: String):Boolean = {
+        false
+    }
+    def createFollowers(followerName: String, hp: Int): Boolean = {
+        false
+    }
+    def updatePlayer() = {
+
+    }
+    def updateFollowers() = {
+
+    }
+    def dropPlayer() = {
+
+    }
+    def dropFollowers() = {
+        
     }
 }

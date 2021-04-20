@@ -18,6 +18,10 @@
             "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar",
             "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.13/1.1.2/scala-parser-combinators_2.13-1.1.2.jar",
             "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/postgresql/postgresql/42.2.19/postgresql-42.2.19.jar",
+            "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/io/argonaut/argonaut_2.13/6.3.3/argonaut_2.13-6.3.3.jar",
+            "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.5/scala-reflect-2.13.5.jar",
+            "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalaz/scalaz-core_2.13/7.4.0-M7/scalaz-core_2.13-7.4.0-M7.jar",
+            "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/io/argonaut/argonaut-scalaz_2.13/6.3.3/argonaut-scalaz_2.13-6.3.3.jar",
             "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar"
         ],
         "out": "/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0-",
@@ -156,6 +160,74 @@
                             "name": "postgresql",
                             "classifier": "sources",
                             "path": "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/postgresql/postgresql/42.2.19/postgresql-42.2.19-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.argonaut",
+                    "name": "argonaut_2.13",
+                    "version": "6.3.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "argonaut_2.13",
+                            "path": "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/io/argonaut/argonaut_2.13/6.3.3/argonaut_2.13-6.3.3.jar"
+                        },
+                        {
+                            "name": "argonaut_2.13",
+                            "classifier": "sources",
+                            "path": "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/io/argonaut/argonaut_2.13/6.3.3/argonaut_2.13-6.3.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.13.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.5/scala-reflect-2.13.5.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.5/scala-reflect-2.13.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalaz",
+                    "name": "scalaz-core_2.13",
+                    "version": "7.4.0-M7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalaz-core_2.13",
+                            "path": "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalaz/scalaz-core_2.13/7.4.0-M7/scalaz-core_2.13-7.4.0-M7.jar"
+                        },
+                        {
+                            "name": "scalaz-core_2.13",
+                            "classifier": "sources",
+                            "path": "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalaz/scalaz-core_2.13/7.4.0-M7/scalaz-core_2.13-7.4.0-M7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.argonaut",
+                    "name": "argonaut-scalaz_2.13",
+                    "version": "6.3.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "argonaut-scalaz_2.13",
+                            "path": "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/io/argonaut/argonaut-scalaz_2.13/6.3.3/argonaut-scalaz_2.13-6.3.3.jar"
+                        },
+                        {
+                            "name": "argonaut-scalaz_2.13",
+                            "classifier": "sources",
+                            "path": "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/io/argonaut/argonaut-scalaz_2.13/6.3.3/argonaut-scalaz_2.13-6.3.3-sources.jar"
                         }
                     ]
                 },

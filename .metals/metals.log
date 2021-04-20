@@ -7364,3 +7364,494 @@ Apr 16, 2021 12:43:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancella
 WARNING: Unmatched cancel notification for request id 9135
 [0m2021.04.16 12:44:42 INFO  compiling project-0- (1 scala source)[0m
 [0m2021.04.16 12:44:42 INFO  time: compiled project-0- in 0.55s[0m
+[0m2021.04.16 13:23:45 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.16 13:23:45 INFO  time: compiled project-0- in 0.57s[0m
+[0m2021.04.16 13:50:24 INFO  shutting down Metals[0m
+[0m2021.04.16 13:50:25 INFO  Shut down connection with build server.[0m
+[0m2021.04.16 13:50:25 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.04.16 14:17:54 INFO  Started: Metals version 0.10.1 in workspace '/home/timmiller/myfolder/Project[0]/project[0]' for client vscode 1.55.2.[0m
+[0m2021.04.16 14:17:54 INFO  time: initialize in 0.44s[0m
+[0m2021.04.16 14:17:54 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher882246601234405400/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.04.16 14:17:54 WARN  no build target for: /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Dao.scala[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher882246601234405400/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher882246601234405400/bsp.socket...
+[0m2021.04.16 14:17:54 INFO  skipping build import with status 'Installed'[0m
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.16 14:17:54 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.16 14:17:54 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher1444110683940961194/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher1444110683940961194/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher1444110683940961194/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.16 14:17:55 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.16 14:17:55 INFO  time: Connected to build server in 0.56s[0m
+[0m2021.04.16 14:17:55 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.04.16 14:17:56 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+[0m2021.04.16 14:17:59 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+[0m2021.04.16 14:18:00 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.04.16 14:17:59 INFO  time: code lens generation in 4.45s[0m
+[0m2021.04.16 14:18:00 INFO  time: indexed workspace in 3.48s[0m
+[0m2021.04.16 14:18:04 INFO  time: code lens generation in 1.04s[0m
+[0m2021.04.16 14:28:17 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.16 14:28:17 INFO  time: compiled project-0- in 0.58s[0m
+[0m2021.04.16 14:28:33 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.16 14:28:33 INFO  time: compiled project-0- in 0.57s[0m
+[0m2021.04.16 14:28:41 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.16 14:28:41 INFO  time: compiled project-0- in 0.6s[0m
+[0m2021.04.16 14:28:56 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.16 14:28:56 INFO  time: compiled project-0- in 0.62s[0m
+[0m2021.04.16 14:29:08 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.16 14:29:08 INFO  time: compiled project-0- in 0.57s[0m
+[0m2021.04.16 14:39:01 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.16 14:39:01 INFO  time: compiled project-0- in 0.57s[0m
+[0m2021.04.16 15:06:19 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.16 15:06:19 INFO  time: compiled project-0- in 0.59s[0m
+Apr 16, 2021 4:51:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 483
+Apr 16, 2021 4:51:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 489
+Apr 16, 2021 4:51:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 511
+Apr 16, 2021 4:52:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 517
+[0m2021.04.16 18:57:07 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.16 18:57:07 INFO  time: compiled project-0- in 95ms[0m
+[0m2021.04.16 18:57:13 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.16 18:57:13 INFO  time: compiled project-0- in 0.61s[0m
+[0m2021.04.16 18:57:15 INFO  shutting down Metals[0m
+[0m2021.04.16 18:57:15 INFO  Shut down connection with build server.[0m
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...[0m
+2021.04.16 18:57:15 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.04.17 19:07:48 INFO  Started: Metals version 0.10.1 in workspace '/home/timmiller/myfolder/Project[0]/project[0]' for client vscode 1.55.2.[0m
+[0m2021.04.17 19:07:48 INFO  time: initialize in 0.34s[0m
+[0m2021.04.17 19:07:48 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher3986060909981625741/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.04.17 19:07:48 WARN  no build target for: /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Dao.scala[0m
+[0m2021.04.17 19:07:48 WARN  no build target for: /home/timmiller/myfolder/Project[0]/project[0]/build.sbt[0m
+[0m2021.04.17 19:07:48 INFO  skipping build import with status 'Installed'[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop'...
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0--test.json'
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0-.json'
+[0m[32m[D][0m Configured SemanticDB in projects 'project-0--test', 'project-0-'
+[0m[32m[D][0m Missing analysis file for project 'project-0--test'
+[0m[32m[D][0m Loading previous analysis for 'project-0-' from '/home/timmiller/myfolder/Project[0]/project[0]/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher3986060909981625741/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher3986060909981625741/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.17 19:07:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.17 19:07:49 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher7357165634765224253/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher7357165634765224253/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher7357165634765224253/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.17 19:07:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.17 19:07:49 INFO  time: Connected to build server in 0.6s[0m
+[0m2021.04.17 19:07:49 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.04.17 19:07:50 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+[0m2021.04.17 19:07:52 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+[0m2021.04.17 19:07:52 INFO  time: code lens generation in 1.09s[0m
+[0m2021.04.17 19:07:52 INFO  time: code lens generation in 3.71s[0m
+[0m2021.04.17 19:07:52 INFO  time: code lens generation in 2.49s[0m
+[0m2021.04.17 19:07:53 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.04.17 19:07:53 INFO  time: indexed workspace in 3.28s[0m
+[0m2021.04.17 19:07:55 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals1581279211406212960/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.04.17 19:07:57 INFO  [info] welcome to sbt 1.4.9 (Private Build Java 1.8.0_282)[0m
+[0m2021.04.17 19:07:59 INFO  [info] loading settings for project project-0--build-build from metals.sbt ...[0m
+[0m2021.04.17 19:08:00 INFO  time: code lens generation in 3.58s[0m
+[0m2021.04.17 19:08:00 INFO  [info] loading project definition from /home/timmiller/myfolder/Project[0]/project[0]/project/project[0m
+[0m2021.04.17 19:08:01 INFO  [info] loading settings for project project-0--build from metals.sbt ...[0m
+[0m2021.04.17 19:08:01 INFO  [info] loading project definition from /home/timmiller/myfolder/Project[0]/project[0]/project[0m
+[0m2021.04.17 19:08:04 INFO  [success] Generated .bloop/project-0--build.json[0m
+[0m2021.04.17 19:08:04 INFO  [success] Total time: 3 s, completed Apr 17, 2021 7:08:05 PM[0m
+[0m2021.04.17 19:08:06 INFO  [info] loading settings for project project-0- from build.sbt ...[0m
+[0m2021.04.17 19:08:06 INFO  [info] set current project to hello-world (in build file:/home/timmiller/myfolder/Project%5B0%5D/project%5B0%5D/)[0m
+[0m2021.04.17 19:08:06 INFO  [success] Generated .bloop/project-0-.json[0m
+[0m2021.04.17 19:08:06 INFO  [success] Generated .bloop/project-0--test.json[0m
+[0m2021.04.17 19:08:06 INFO  [success] Total time: 0 s, completed Apr 17, 2021 7:08:07 PM[0m
+[0m2021.04.17 19:08:07 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.04.17 19:08:07 INFO  time: ran 'sbt bloopInstall' in 12s[0m
+[0m2021.04.17 19:08:07 INFO  Disconnecting from Bloop session...[0m
+[0m2021.04.17 19:08:07 INFO  Shut down connection with build server.[0m
+[0m2021.04.17 19:08:07 INFO No more data in the client stdin, exiting...
+ Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2021.04.17 19:08:07 INFO  Attempting to connect to the build server...[0m
+[0m2021.04.17 19:08:08 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.17 19:08:08 INFO  Attempting to connect to the build server...[0m
+[0m2021.04.17 19:08:08 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.17 19:08:08 INFO  time: Connected to build server in 0.15s[0m
+[0m2021.04.17 19:08:08 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.04.17 19:08:08 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.04.17 19:08:08 INFO  time: indexed workspace in 0.76s[0m
+[0m2021.04.17 19:22:56 INFO  compiling project-0- (5 scala sources)[0m
+[0m2021.04.17 19:22:58 INFO  time: compiled project-0- in 2.3s[0m
+[0m2021.04.17 19:23:33 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals3644824759447327958/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.04.17 19:23:34 INFO  [info] welcome to sbt 1.4.9 (Private Build Java 1.8.0_282)[0m
+[0m2021.04.17 19:23:35 INFO  [info] loading settings for project project-0--build-build from metals.sbt ...[0m
+[0m2021.04.17 19:23:35 INFO  [info] loading project definition from /home/timmiller/myfolder/Project[0]/project[0]/project/project[0m
+[0m2021.04.17 19:23:36 INFO  [info] loading settings for project project-0--build from metals.sbt ...[0m
+[0m2021.04.17 19:23:36 INFO  [info] loading project definition from /home/timmiller/myfolder/Project[0]/project[0]/project[0m
+[0m2021.04.17 19:23:39 INFO  [success] Generated .bloop/project-0--build.json[0m
+[0m2021.04.17 19:23:39 INFO  [success] Total time: 2 s, completed Apr 17, 2021 7:23:39 PM[0m
+[0m2021.04.17 19:23:41 INFO  [info] loading settings for project project-0- from build.sbt ...[0m
+[0m2021.04.17 19:23:41 INFO  [info] set current project to hello-world (in build file:/home/timmiller/myfolder/Project%5B0%5D/project%5B0%5D/)[0m
+[0m2021.04.17 19:23:44 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.[0m
+[0m2021.04.17 19:23:44 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.[0m
+[0m2021.04.17 19:23:44 INFO  [success] Generated .bloop/project-0-.json[0m
+[0m2021.04.17 19:23:44 INFO  [success] Generated .bloop/project-0--test.json[0m
+[0m2021.04.17 19:23:44 INFO  [success] Total time: 3 s, completed Apr 17, 2021 7:23:44 PM[0m
+[0m2021.04.17 19:23:44 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.04.17 19:23:45 INFO  time: ran 'sbt bloopInstall' in 12s[0m
+[0m2021.04.17 19:23:45 INFO  Disconnecting from Bloop session...[0m
+[0m2021.04.17 19:23:45 INFO  Shut down connection with build server.[0m
+[0m2021.04.17 19:23:45 INFO  Shut down connection with build server.[0m
+[0m2021.04.17 19:23:45 INFO  Attempting to connect to the build server...[0m
+[0m2021.04.17 19:23:45 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.17 19:23:45 INFO  Attempting to connect to the build server...[0m
+[0m2021.04.17 19:23:45 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.17 19:23:45 INFO  time: Connected to build server in 0.17s[0m
+[0m2021.04.17 19:23:45 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.04.17 19:23:45 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.04.17 19:23:45 INFO  time: indexed workspace in 0.8s[0m
+[0m2021.04.17 19:24:59 INFO  compiling project-0- (5 scala sources)[0m
+[0m2021.04.17 19:25:01 INFO  time: compiled project-0- in 1.88s[0m
+[0m2021.04.17 22:50:33 INFO  shutting down Metals[0m
+[0m2021.04.17 22:50:33 INFO  Shut down connection with build server.[0m
+[0m2021.04.17 22:50:33 INFO  Shut down connection with build server.[0m
+[0m2021.04.18 15:46:02 INFO  Started: Metals version 0.10.1 in workspace '/home/timmiller/myfolder/Project[0]/project[0]' for client vscode 1.55.2.[0m
+[0m2021.04.18 15:46:02 INFO  time: initialize in 0.37s[0m
+[0m2021.04.18 15:46:02 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher124652070186407618/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.04.18 15:46:02 WARN  no build target for: /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Dao.scala[0m
+[0m2021.04.18 15:46:02 INFO  skipping build import with status 'Installed'[0m
+Waiting for the bsp connection to come up...
+[0m2021.04.18 15:46:05 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.8...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop'...
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0--test.json'
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0-.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.3.
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'project-0--test', 'project-0-'
+[0m[32m[D][0m Missing analysis file for project 'project-0--test'
+[0m[32m[D][0m Loading previous analysis for 'project-0-' from '/home/timmiller/myfolder/Project[0]/project[0]/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher124652070186407618/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher124652070186407618/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.18 15:46:07 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.18 15:46:07 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher7022518565232597278/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher7022518565232597278/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher7022518565232597278/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.18 15:46:07 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.18 15:46:07 INFO  time: Connected to build server in 4.08s[0m
+[0m2021.04.18 15:46:07 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.04.18 15:46:07 INFO  time: Imported build in 0.13s[0m
+[0m2021.04.18 15:46:07 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+[0m2021.04.18 15:46:07 INFO  time: code lens generation in 4.72s[0m
+[0m2021.04.18 15:46:08 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.04.18 15:46:08 INFO  time: indexed workspace in 1.52s[0m
+[0m2021.04.18 15:51:55 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.18 15:51:58 INFO  time: compiled project-0- in 3.48s[0m
+[0m2021.04.18 15:57:25 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.18 15:57:25 INFO  time: compiled project-0- in 0.76s[0m
+[0m2021.04.18 15:58:59 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.18 15:58:59 INFO  time: compiled project-0- in 0.6s[0m
+[0m2021.04.18 15:59:25 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.18 15:59:25 INFO  time: compiled project-0- in 0.84s[0m
+[0m2021.04.18 15:59:33 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.18 15:59:33 INFO  time: compiled project-0- in 0.83s[0m
+[0m2021.04.18 15:59:37 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.18 15:59:37 INFO  time: compiled project-0- in 0.77s[0m
+[0m2021.04.18 15:59:48 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.18 15:59:48 INFO  time: compiled project-0- in 0.69s[0m
+[0m2021.04.18 16:01:33 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.18 16:01:33 INFO  time: compiled project-0- in 0.39s[0m
+[0m2021.04.18 16:05:34 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.18 16:05:34 INFO  time: compiled project-0- in 0.79s[0m
+[0m2021.04.18 16:05:57 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.18 16:05:57 INFO  time: compiled project-0- in 0.64s[0m
+[0m2021.04.18 16:06:20 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.18 16:06:20 INFO  time: compiled project-0- in 0.6s[0m
+Apr 18, 2021 4:08:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 520
+Apr 18, 2021 4:08:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 528
+Apr 18, 2021 4:09:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 555
+[0m2021.04.18 16:10:52 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.18 16:10:52 INFO  time: compiled project-0- in 0.81s[0m
+Apr 18, 2021 4:10:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 790
+Apr 18, 2021 4:11:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 799
+Apr 18, 2021 4:11:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 805
+[0m2021.04.18 16:11:20 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.18 16:11:20 INFO  time: compiled project-0- in 0.46s[0m
+[0m2021.04.18 16:11:45 INFO  shutting down Metals[0m
+[0m2021.04.18 16:11:45 INFO  Shut down connection with build server.[0m
+[0m2021.04.18 16:11:45 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.04.19 14:52:54 INFO  Started: Metals version 0.10.1 in workspace '/home/timmiller/myfolder/Project[0]/project[0]' for client vscode 1.55.2.[0m
+[0m2021.04.19 14:52:54 INFO  time: initialize in 0.33s[0m
+[0m2021.04.19 14:52:54 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher7985690254264703678/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.04.19 14:52:54 WARN  no build target for: /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala[0m
+[0m2021.04.19 14:52:54 WARN  no build target for: /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Dao.scala[0m
+[0m2021.04.19 14:52:54 INFO  skipping build import with status 'Installed'[0m
+Waiting for the bsp connection to come up...
+[0m2021.04.19 14:52:56 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.8...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop'...
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0-.json'
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0--test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.3.
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'project-0--test', 'project-0-'
+[0m[32m[D][0m Missing analysis file for project 'project-0--test'
+[0m[32m[D][0m Loading previous analysis for 'project-0-' from '/home/timmiller/myfolder/Project[0]/project[0]/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher7985690254264703678/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher7985690254264703678/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.19 14:52:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.19 14:52:58 INFO  time: code lens generation in 1.36s[0m
+[0m2021.04.19 14:52:58 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher5393866131690461758/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher5393866131690461758/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher5393866131690461758/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.19 14:52:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.19 14:52:58 INFO  time: Connected to build server in 3.08s[0m
+[0m2021.04.19 14:52:58 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.04.19 14:52:58 INFO  time: Imported build in 0.1s[0m
+[0m2021.04.19 14:52:58 INFO  time: code lens generation in 3.27s[0m
+[0m2021.04.19 14:52:58 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+[0m2021.04.19 14:52:59 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.04.19 14:52:59 INFO  time: indexed workspace in 1.57s[0m
+[0m2021.04.19 14:53:02 INFO  shutting down Metals[0m
+[0m2021.04.19 14:53:02 INFO  Shut down connection with build server.[0m
+[0m2021.04.19 14:53:02 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.04.19 15:03:53 INFO  Started: Metals version 0.10.1 in workspace '/home/timmiller/myfolder/Project[0]/project[0]' for client vscode 1.55.2.[0m
+[0m2021.04.19 15:03:54 INFO  time: initialize in 0.3s[0m
+[0m2021.04.19 15:03:53 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher5664529320483749597/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.04.19 15:03:54 WARN  no build target for: /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala[0m
+[0m2021.04.19 15:03:54 INFO  skipping build import with status 'Installed'[0m
+Waiting for the bsp connection to come up...
+[0m2021.04.19 15:03:55 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+Waiting for the bsp connection to come up...
+[0m2021.04.19 15:03:56 INFO  time: code lens generation in 2.36s[0m
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.8...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop'...
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0-.json'
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0--test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.3.
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'project-0--test', 'project-0-'
+[0m[32m[D][0m Missing analysis file for project 'project-0--test'
+[0m[32m[D][0m Loading previous analysis for 'project-0-' from '/home/timmiller/myfolder/Project[0]/project[0]/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher5664529320483749597/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher5664529320483749597/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.19 15:03:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.19 15:03:56 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher8139683524647805169/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher8139683524647805169/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher8139683524647805169/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.19 15:03:57 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.19 15:03:57 INFO  time: Connected to build server in 2.87s[0m
+[0m2021.04.19 15:03:57 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.04.19 15:03:58 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.04.19 15:03:58 INFO  time: indexed workspace in 0.92s[0m
+[0m2021.04.19 17:00:40 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.19 17:00:41 INFO  time: compiled project-0- in 1.08s[0m
+[0m2021.04.19 17:00:49 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:22:112: stale bloop error: ')' expected but string literal found.
+      val conn = DriverManager.getConnection("jdbc:postgresql://localhost:5433/P-0", "postgres", "sys.env.get(""LOGNAME"").get")
+                                                                                                               ^[0m
+[0m2021.04.19 17:00:49 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:30:22: stale bloop error: ';' expected but ')' found.
+      while(rs.next()){
+                     ^[0m
+[0m2021.04.19 17:00:49 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:22:112: stale bloop error: ')' expected but string literal found.
+      val conn = DriverManager.getConnection("jdbc:postgresql://localhost:5433/P-0", "postgres", "sys.env.get(""LOGNAME"").get")
+                                                                                                               ^[0m
+[0m2021.04.19 17:00:49 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:30:22: stale bloop error: ';' expected but ')' found.
+      while(rs.next()){
+                     ^[0m
+[0m2021.04.19 17:00:49 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:22:112: stale bloop error: ')' expected but string literal found.
+      val conn = DriverManager.getConnection("jdbc:postgresql://localhost:5433/P-0", "postgres", "sys.env.get(""LOGNAME"").get")
+                                                                                                               ^[0m
+[0m2021.04.19 17:00:49 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:30:22: stale bloop error: ';' expected but ')' found.
+      while(rs.next()){
+                     ^[0m
+[0m2021.04.19 17:00:49 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:22:112: stale bloop error: ')' expected but string literal found.
+      val conn = DriverManager.getConnection("jdbc:postgresql://localhost:5433/P-0", "postgres", "sys.env.get(""LOGNAME"").get")
+                                                                                                               ^[0m
+[0m2021.04.19 17:00:49 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:30:22: stale bloop error: ';' expected but ')' found.
+      while(rs.next()){
+                     ^[0m
+[0m2021.04.19 17:00:49 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:22:112: stale bloop error: ')' expected but string literal found.
+      val conn = DriverManager.getConnection("jdbc:postgresql://localhost:5433/P-0", "postgres", "sys.env.get(""LOGNAME"").get")
+                                                                                                               ^[0m
+[0m2021.04.19 17:00:49 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:30:22: stale bloop error: ';' expected but ')' found.
+      while(rs.next()){
+                     ^[0m
+[0m2021.04.19 17:00:49 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:22:112: stale bloop error: ')' expected but string literal found.
+      val conn = DriverManager.getConnection("jdbc:postgresql://localhost:5433/P-0", "postgres", "sys.env.get(""LOGNAME"").get")
+                                                                                                               ^[0m
+[0m2021.04.19 17:00:49 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:30:22: stale bloop error: ';' expected but ')' found.
+      while(rs.next()){
+                     ^[0m
+[0m2021.04.19 17:00:50 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:22:112: stale bloop error: ')' expected but string literal found.
+      val conn = DriverManager.getConnection("jdbc:postgresql://localhost:5433/P-0", "postgres", "sys.env.get(""LOGNAME"").get")
+                                                                                                               ^[0m
+[0m2021.04.19 17:00:50 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:30:22: stale bloop error: ';' expected but ')' found.
+      while(rs.next()){
+                     ^[0m
+[0m2021.04.19 17:00:50 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:22:112: stale bloop error: ')' expected but string literal found.
+      val conn = DriverManager.getConnection("jdbc:postgresql://localhost:5433/P-0", "postgres", "sys.env.get(""LOGNAME"").get")
+                                                                                                               ^[0m
+[0m2021.04.19 17:00:50 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:30:22: stale bloop error: ';' expected but ')' found.
+      while(rs.next()){
+                     ^[0m
+[0m2021.04.19 17:00:56 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:22:112: stale bloop error: ')' expected but string literal found.
+      val conn = DriverManager.getConnection("jdbc:postgresql://localhost:5433/P-0", "postgres", "sys.env.get(""LOGNAME"").get")
+                                                                                                               ^[0m
+[0m2021.04.19 17:00:56 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:30:22: stale bloop error: ';' expected but ')' found.
+      while(rs.next()){
+                     ^[0m
+[0m2021.04.19 17:00:56 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:22:112: stale bloop error: ')' expected but string literal found.
+      val conn = DriverManager.getConnection("jdbc:postgresql://localhost:5433/P-0", "postgres", "sys.env.get(""LOGNAME"").get")
+                                                                                                               ^[0m
+[0m2021.04.19 17:00:56 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:30:22: stale bloop error: ';' expected but ')' found.
+      while(rs.next()){
+                     ^[0m
+[0m2021.04.19 17:01:06 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.19 17:01:07 INFO  time: compiled project-0- in 1.37s[0m
+Apr 19, 2021 9:00:02 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Apr 19, 2021 9:00:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 180
+Apr 19, 2021 9:00:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 303
+Apr 19, 2021 9:01:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 350
+Apr 19, 2021 9:01:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 352
+[0m2021.04.19 21:01:07 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.19 21:01:08 INFO  time: compiled project-0- in 1.74s[0m
+[0m2021.04.19 21:01:13 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.19 21:01:13 INFO  time: compiled project-0- in 0.94s[0m
+[0m2021.04.19 21:01:20 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.19 21:01:20 INFO  time: compiled project-0- in 0.75s[0m
+Apr 19, 2021 9:01:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 427
+Apr 19, 2021 9:01:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 480
+[0m2021.04.19 21:02:08 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.19 21:02:08 INFO  time: compiled project-0- in 0.75s[0m
+Apr 19, 2021 9:04:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 562
+Apr 19, 2021 9:04:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 569
+Apr 19, 2021 9:04:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 582
+[0m2021.04.19 21:04:28 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.19 21:04:28 INFO  time: compiled project-0- in 0.1s[0m
+Apr 19, 2021 9:04:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 604
+Apr 19, 2021 9:04:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 612
+[0m2021.04.19 21:04:38 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.19 21:04:38 INFO  time: compiled project-0- in 0.51s[0m
+Apr 19, 2021 9:05:18 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification

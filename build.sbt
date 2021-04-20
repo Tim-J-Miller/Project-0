@@ -29,6 +29,19 @@ libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % 
 // https://mvnrepository.com/artifact/org.postgresql/postgresql
 libraryDependencies += "org.postgresql" % "postgresql" % "42.2.19"
 
+// https://mvnrepository.com/artifact/io.argonaut/argonaut
+libraryDependencies += "io.argonaut" %% "argonaut" % "6.3.3"
+
+// https://mvnrepository.com/artifact/org.scala-lang/scala-reflect
+libraryDependencies += "org.scala-lang" % "scala-reflect" % "2.13.5"
+
+// https://mvnrepository.com/artifact/org.scalaz/scalaz-core
+libraryDependencies += "org.scalaz" %% "scalaz-core" % "7.4.0-M7"
+
+// https://mvnrepository.com/artifact/io.argonaut/argonaut-scalaz
+libraryDependencies += "io.argonaut" %% "argonaut-scalaz" % "6.3.3"
+
+
 
 // Here, `libraryDependencies` is a set of dependencies, and by using `+=`,
 // we're adding the scala-parser-combinators dependency to the set of dependencies

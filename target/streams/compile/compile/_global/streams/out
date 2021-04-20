@@ -1,7 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0m/home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:12:9: overloaded method getPlayer with alternatives:[0m
-[0m[[0m[31merror[0m] [0m[0m  (playerName: String)Boolean <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (idNumber: Int)Boolean[0m
-[0m[[0m[31merror[0m] [0m[0m cannot be applied to ()[0m
-[0m[[0m[31merror[0m] [0m[0m    Dao.getPlayer()[0m
-[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:11:24: not enough arguments for method get: (key: String): Option[String].[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter key.[0m
+[0m[[0m[31merror[0m] [0m[0m    println(sys.env.get())[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
