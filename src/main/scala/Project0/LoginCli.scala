@@ -21,12 +21,12 @@ class Cli{
             var input = StdIn.readLine()
             input match {
                 case commandArgPattern(cmd, arg) if cmd.equalsIgnoreCase("login") => {
-                    if (arg.isEmpty()) playerID = loginMenu() else playerID = loginMenu(arg.toLowerCase())
+                    if (arg.isEmpty()) loginMenu() else loginMenu(arg.toLowerCase())
                     println(s"Logged in as $playerID")
                     welcomeMenuLoop = false
                 }
                 case commandArgPattern(cmd, arg) if cmd.equalsIgnoreCase("create") => {
-                    if (arg.isEmpty()) charName = createMenu() else charName = createMenu(arg.toLowerCase())
+                    if (arg.isEmpty()) createMenu() else createMenu(arg.toLowerCase())
                     println(s"Created account $charName")
                     welcomeMenuLoop = false
                 }
@@ -45,7 +45,7 @@ class Cli{
         GameCli.run() 
     }
     
-    def loginMenu():String = {
+    def loginMenu():Unit = {
         //TODO
         //read from .JSON and print locally stored player IDs
         //request player enter their ID
@@ -55,9 +55,9 @@ class Cli{
             //if no remote account found in DB print no such account exists and return to welcome loop
             
             //if DB returns valid info then enter execute GameCli.run with returned info
-""
+
     }    
-    def loginMenu(id: String):String = {
+    def loginMenu(name: String):Unit = {
         //TODO
         //if ID does not match .JSON info then ask if should query DB with entered info
             //if no then return to welcome loop
@@ -65,22 +65,21 @@ class Cli{
             //if no remote account found in DB print no such account exists and return to welcome loop
             
             //if DB returns valid info then enter execute GameCli.run with returned info
-""
+
+
     }
-    def createMenu():String = {
+    def createMenu():Unit = {
         //TODO
         //prompt user to enter the desired ID
         //if .JSON contains entered ID then ask for new ID loop until unique is entered
         //once ID is entered that isnt in .JSON query DB with entered ID, if not unique then restart loop
         //if new ID is not present in DB then add to DB and proceed to GameCli.createNewChar
-        ""
     }
-    def createMenu(id :String):String = {
+    def createMenu(id :String):Unit = {
         //TODO
         //if .JSON contains entered ID then ask for new ID loop until unique is entered
         //once ID is entered that isnt in .JSON query DB with entered ID, if not unique then restart loop
         //if new ID is not present in DB then add to DB and proceed to GameCli.createNewChar
-        ""
     }
 
     def delete(player: Player) = {

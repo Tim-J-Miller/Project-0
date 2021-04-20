@@ -1,6 +1,7 @@
 package Project0
 
 import org.postgresql.util.PSQLException
+import scala.collection.mutable.ArrayBuffer
 import java.sql.DriverManager
 import java.sql.Connection
 
@@ -43,6 +44,7 @@ object Dao {
                 //afterexecuting the statement, use it to get a resultset
                 val rs = stmt.getResultSet()
                 while(rs.next()){
+                    GameCli.p.playerID = rs.getInt("player_id")
                     GameCli.p.playerName = rs.getString("player_name")
                     GameCli.p.characterName = rs.getString("character_name")
                     GameCli.p.goldTotal = rs.getString("gold_total").toInt
@@ -60,7 +62,7 @@ object Dao {
             }
         }
     }
-    def getPlayer(playerName: String):Boolean = {  
+    def getPlayer(playerName: String):Boolean = {  //login function
         val conOpt:Option[Connection] = getConnection()
         if (conOpt == None) {
             false
@@ -73,6 +75,7 @@ object Dao {
                 
                 val rs = stmt.getResultSet()
                 while(rs.next()){
+                    GameCli.p.playerID = rs.getInt("player_id")
                     GameCli.p.playerName = rs.getString("player_name")
                     GameCli.p.characterName = rs.getString("character_name")
                     GameCli.p.goldTotal = rs.getString("gold_total").toInt
@@ -118,22 +121,130 @@ object Dao {
             }
         }
     }
-    def createPlayer(playerName: String, characterName: String):Boolean = {
-        false
+    def createPlayer(playerName: String, characterName: String):Boolean = {//create new account and login
+        val conOpt:Option[Connection] = getConnection()
+        if (conOpt == None) {
+            false
+        }
+        else {
+            try{
+                val stmt = conOpt.get.prepareStatement("INSERT INTO Players (player_name, character_name, gold_total) " +
+                  "VALUES (?,?,?);")
+                stmt.setString(1, playerName)
+                stmt.setString(2, characterName)
+                stmt.setInt(3, 50)
+                stmt.execute()
+                true
+            }
+            catch{
+                case e: PSQLException => {
+                    println(e.getMessage())
+                    false
+                }
+            }
+            finally {
+                conOpt.get.close()
+            }
+        }
     }
+    //only call if GameCli.p.followers.length > 0
     def createFollowers(followerName: String, hp: Int): Boolean = {
-        false
+        val conOpt:Option[Connection] = getConnection()
+        var followerInsertList = ArrayBuffer[String]()
+        GameCli.p.followers.foreach(z => {
+            followerInsertList.addOne("("+GameCli.p.playerID+",'"+z.name+"',"+z.HP+")")
+        })
+        if (conOpt == None) {
+            false
+        }
+        else {
+            try{
+                val stmt = conOpt.get.prepareStatement("INSERT INTO Followers (player_id, follower_name, hp) " +
+                  "VALUES "+followerInsertList.mkString(",")+";")
+                stmt.execute()
+                true
+            }
+            catch{
+                case e: PSQLException => {
+                    println(e.getMessage())
+                    false
+                }
+            }
+            finally {
+                conOpt.get.close()
+            }
+        }
     }
-    def updatePlayer() = {
-
+    def updatePlayer():Boolean = {
+        val conOpt:Option[Connection] = getConnection()
+        if (conOpt == None) {
+            false
+        }
+        else {
+            try{
+                val stmt = conOpt.get.prepareStatement("UPDATE Players SET player_name = ?, character_name = ?, gold_total = ? WHERE player_id = ?;")
+                stmt.setString(1, GameCli.p.playerName)
+                stmt.setString(2, GameCli.p.characterName)
+                stmt.setInt(3, GameCli.p.goldTotal)
+                stmt.setInt(4, GameCli.p.playerID)
+                stmt.execute()
+                true
+            }
+            catch{
+                case e: PSQLException => {
+                    println(e.getMessage())
+                    false
+                }
+            }
+            finally {
+                conOpt.get.close()
+            }
+        }
     }
-    def updateFollowers() = {
-
+    def deletePlayer() = {
+        val conOpt:Option[Connection] = getConnection()
+        if (conOpt == None) {
+            false
+        }
+        else {
+            try{
+                val stmt = conOpt.get.prepareStatement("DELETE FROM Players WHERE player_id = ?;")
+                stmt.setInt(1, GameCli.p.playerID)
+                stmt.execute()
+                true
+            }
+            catch{
+                case e: PSQLException => {
+                    println(e.getMessage())
+                    false
+                }
+            }
+            finally {
+                conOpt.get.close()
+            }
+        }
     }
-    def dropPlayer() = {
-
-    }
-    def dropFollowers() = {
-        
+    def deleteFollowers() = {
+        val conOpt:Option[Connection] = getConnection()
+        if (conOpt == None) {
+            false
+        }
+        else {
+            try{
+                val stmt = conOpt.get.prepareStatement("DELETE FROM Followers WHERE player_id = ?;")
+                stmt.setInt(1, GameCli.p.playerID)
+                stmt.execute()
+                true
+            }
+            catch{
+                case e: PSQLException => {
+                    println(e.getMessage())
+                    false
+                }
+            }
+            finally {
+                conOpt.get.close()
+            }
+        }
     }
 }

@@ -225,4 +225,4 @@ object GameCli{
 
 case class Follower(val name: String, var HP: Int = 10)
 
-case class Player(var playerName:String = "", var characterName: String = "", var goldTotal: Int = 0, var followers: ArrayBuffer[Follower] = ArrayBuffer())
+case class Player(var playerID: Int = 0, var playerName: String = "", var characterName: String = "", var goldTotal: Int = 0, var followers: ArrayBuffer[Follower] = ArrayBuffer())
