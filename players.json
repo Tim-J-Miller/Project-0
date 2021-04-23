@@ -1,0 +1,38 @@
+[
+  {
+    "playerID": 3,
+    "playerName": "Fannie",
+    "characterName": "in",
+    "goldTotal": 4493
+  },
+  {
+    "playerID": 4,
+    "playerName": "Genevieve",
+    "characterName": "nisi",
+    "goldTotal": 1083
+  },
+  {
+    "playerID": 5,
+    "playerName": "Gertrude",
+    "characterName": "ad",
+    "goldTotal": 1578
+  },
+  {
+    "playerID": 6,
+    "playerName": "Baldwin",
+    "characterName": "ipsum",
+    "goldTotal": 4211
+  },
+  {
+    "playerID": 7,
+    "playerName": "Black",
+    "characterName": "mollit",
+    "goldTotal": 2120
+  },
+  {
+    "playerID": 8,
+    "playerName": "Blake",
+    "characterName": "mollit",
+    "goldTotal": 983
+  }
+]

@@ -29,7 +29,7 @@ object Dao {
             }
         }
     }
-    def getPlayer(idNumber: Int):Boolean = {
+    def getAvailablePlayers(offsetNumber: Int):Boolean = {
         val conOpt:Option[Connection] = getConnection()
         if (conOpt == None) {
             false
@@ -38,16 +38,14 @@ object Dao {
             try{
                 //use drivermanager to get a connection
                 //use the connection to prepare a sql statement
-                val stmt = conOpt.get.prepareStatement("SELECT * FROM players WHERE player_id = ?;")
-                stmt.setInt(1, idNumber)
+                val stmt = conOpt.get.prepareStatement("SELECT * FROM players LIMIT ? OFFSET ?;")
+                stmt.setInt(1, 10)
+                stmt.setInt(1, offsetNumber*10)
                 stmt.execute()
                 //afterexecuting the statement, use it to get a resultset
                 val rs = stmt.getResultSet()
                 while(rs.next()){
-                    GameCli.p.playerID = rs.getInt("player_id")
-                    GameCli.p.playerName = rs.getString("player_name")
-                    GameCli.p.characterName = rs.getString("character_name")
-                    GameCli.p.goldTotal = rs.getString("gold_total").toInt
+                    println(rs.getInt("player_id") +"\t"+ rs.getString("player_name")+"\t"+ rs.getString("character_name")+"\t"+ rs.getString("gold_total").toInt)
                 }
                 true
             }
@@ -62,7 +60,7 @@ object Dao {
             }
         }
     }
-    def getPlayer(playerName: String):Boolean = {  //login function
+    def loadPlayer(playerName: String):Boolean = {  //login function
         val conOpt:Option[Connection] = getConnection()
         if (conOpt == None) {
             false
@@ -93,7 +91,7 @@ object Dao {
             }
         }
     }
-    def getFollowers() = {
+    def loadFollowers() = {
         val conOpt:Option[Connection] = getConnection()
         if (conOpt == None || GameCli.p.playerName == "") {
             false
