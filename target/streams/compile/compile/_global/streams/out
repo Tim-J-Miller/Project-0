@@ -1,6 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:24:15: missing argument list for method unapply in trait PartialFunction[0m
-[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
-[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `unapply _` or `unapply(_)` instead of `unapply`.[0m
-[0m[[0m[31merror[0m] [0m[0m    println(y.unapply)[0m
-[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/GameCli.scala:192:13: illegal start of simple expression[0m
+[0m[[0m[31merror[0m] [0m[0m            }[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

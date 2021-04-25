@@ -61,6 +61,7 @@ object Dao {
         }
     }
     def loadPlayer(playerName: String):Boolean = {  //login function
+        var b = false
         val conOpt:Option[Connection] = getConnection()
         if (conOpt == None) {
             false
@@ -77,8 +78,9 @@ object Dao {
                     GameCli.p.playerName = rs.getString("player_name")
                     GameCli.p.characterName = rs.getString("character_name")
                     GameCli.p.goldTotal = rs.getString("gold_total").toInt
+                    b = true
                 }
-                true
+                b
             }
             catch{
                 case e: PSQLException => {
@@ -146,7 +148,7 @@ object Dao {
         }
     }
     //only call if GameCli.p.followers.length > 0
-    def createFollowers(followerName: String, hp: Int): Boolean = {
+    def createFollowers(): Boolean = {
         val conOpt:Option[Connection] = getConnection()
         var followerInsertList = ArrayBuffer[String]()
         GameCli.p.followers.foreach(z => {

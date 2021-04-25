@@ -186,8 +186,27 @@ object GameCli{
         p.followers.foreach(x => println(s"${x.name} has ${x.HP} hp"))
     }
     def save(player: Player) = {
-        //Save state to DB
-        println(player)
+        if(Dao.updatePlayer()){
+            if(Dao.deleteFollowers()){
+                if(p.followers.length > 0){
+                    if (Dao.createFollowers()){
+                        println(s"saved with ${p.followers.length} followers")
+                    }
+                    else{
+                        println("error saving")
+                    }
+                }
+                else{
+                    println("saved with 0 followers")
+                }
+            }
+            else{
+                println("error saving")
+            }
+        }
+        else{
+            println("error saving")
+        }
     }
     def printTownMenuOptions():Unit = {
         List(

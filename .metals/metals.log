@@ -8708,3 +8708,1348 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 [0m2021.04.23 09:37:28 INFO  time: code lens generation in 5.97s[0m
 Apr 23, 2021 9:48:37 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTraceNotification
+Apr 23, 2021 10:04:31 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Apr 23, 2021 10:04:31 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+scala.MatchError: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+	at scala.tools.nsc.typechecker.Unapplies.constrParamss(Unapplies.scala:87)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth(Unapplies.scala:140)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth$(Unapplies.scala:137)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.factoryMeth(MetalsGlobal.scala:59)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper(MethodSynthesis.scala:238)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper$(MethodSynthesis.scala:237)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterImplicitWrapper(Namers.scala:57)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym(Global.scala:94)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym$(Global.scala:80)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$$anon$2.enterExistingSym(Global.scala:51)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:306)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:478)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:477)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.pluginsEnterSym(MetalsGlobal.scala:59)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:280)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSym(Typers.scala:1979)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSyms(Typers.scala:1974)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:2034)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1934)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5883)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5973)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:6051)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$8(Typers.scala:3397)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3397)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5582)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5885)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5973)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$TyperPhase.apply(Analyzer.scala:117)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:454)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1345)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1338)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:669)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:818)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1230)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:399)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+
+Apr 23, 2021 10:05:58 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 322
+Apr 23, 2021 10:06:06 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 328
+[0m2021.04.23 11:07:00 INFO  time: code lens generation in 1.82s[0m
+[0m2021.04.23 11:07:07 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals2083070355894218962/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.04.23 11:07:08 INFO  [info] welcome to sbt 1.4.9 (Private Build Java 1.8.0_282)[0m
+[0m2021.04.23 11:07:08 INFO  [info] loading settings for project project-0--build-build from metals.sbt ...[0m
+[0m2021.04.23 11:07:10 INFO  [info] loading project definition from /home/timmiller/myfolder/Project[0]/project[0]/project/project[0m
+[0m2021.04.23 11:07:10 INFO  [info] loading settings for project project-0--build from metals.sbt ...[0m
+[0m2021.04.23 11:07:10 INFO  [info] loading project definition from /home/timmiller/myfolder/Project[0]/project[0]/project[0m
+[0m2021.04.23 11:07:12 INFO  [success] Generated .bloop/project-0--build.json[0m
+[0m2021.04.23 11:07:12 INFO  [success] Total time: 2 s, completed Apr 23, 2021 11:07:12 AM[0m
+[0m2021.04.23 11:07:13 INFO  [info] loading settings for project project-0- from build.sbt ...[0m
+[0m2021.04.23 11:07:13 INFO  [info] set current project to hello-world (in build file:/home/timmiller/myfolder/Project%5B0%5D/project%5B0%5D/)[0m
+[0m2021.04.23 11:07:15 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.[0m
+[0m2021.04.23 11:07:15 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.[0m
+[0m2021.04.23 11:07:15 INFO  [success] Generated .bloop/project-0-.json[0m
+[0m2021.04.23 11:07:15 INFO  [success] Generated .bloop/project-0--test.json[0m
+[0m2021.04.23 11:07:15 INFO  [success] Total time: 1 s, completed Apr 23, 2021 11:07:15 AM[0m
+[0m2021.04.23 11:07:15 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.04.23 11:07:15 INFO  time: ran 'sbt bloopInstall' in 7.89s[0m
+[0m2021.04.23 11:07:15 INFO  Disconnecting from Bloop session...[0m
+[0m2021.04.23 11:07:15 INFO  Shut down connection with build server.[0m
+[0m2021.04.23 11:07:15 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.04.23 11:07:15 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher7435977680993261696/bsp.socket'...
+Waiting for the bsp connection to come up...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop'...
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0-.json'
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0--test.json'
+[0m[32m[D][0m Configured SemanticDB in projects 'project-0--test', 'project-0-'
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher7435977680993261696/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher7435977680993261696/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.23 11:07:15 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.23 11:07:15 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher5442381803011309245/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher5442381803011309245/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher5442381803011309245/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.23 11:07:15 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.23 11:07:15 INFO  time: Connected to build server in 0.16s[0m
+[0m2021.04.23 11:07:15 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.04.23 11:07:16 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+Apr 23, 2021 11:07:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 370
+[0m2021.04.23 11:07:16 INFO  time: indexed workspace in 0.64s[0m
+[0m2021.04.23 11:07:17 INFO  compiling project-0- (5 scala sources)[0m
+[0m2021.04.23 11:07:21 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+[0m2021.04.23 11:07:21 INFO  time: compiled project-0- in 4.16s[0m
+Apr 23, 2021 11:07:22 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 383
+[0m2021.04.23 11:07:34 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals7418178941435489704/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.04.23 11:07:35 INFO  [info] welcome to sbt 1.4.9 (Private Build Java 1.8.0_282)[0m
+[0m2021.04.23 11:07:35 INFO  [info] loading settings for project project-0--build-build from metals.sbt ...[0m
+[0m2021.04.23 11:07:36 INFO  [info] loading project definition from /home/timmiller/myfolder/Project[0]/project[0]/project/project[0m
+[0m2021.04.23 11:07:36 INFO  [info] loading settings for project project-0--build from metals.sbt ...[0m
+[0m2021.04.23 11:07:36 INFO  [info] loading project definition from /home/timmiller/myfolder/Project[0]/project[0]/project[0m
+[0m2021.04.23 11:07:38 INFO  [success] Generated .bloop/project-0--build.json[0m
+[0m2021.04.23 11:07:38 INFO  [success] Total time: 1 s, completed Apr 23, 2021 11:07:38 AM[0m
+[0m2021.04.23 11:07:38 INFO  [info] loading settings for project project-0- from build.sbt ...[0m
+[0m2021.04.23 11:07:38 INFO  [info] set current project to hello-world (in build file:/home/timmiller/myfolder/Project%5B0%5D/project%5B0%5D/)[0m
+[0m2021.04.23 11:07:38 INFO  [success] Generated .bloop/project-0-.json[0m
+[0m2021.04.23 11:07:38 INFO  [success] Generated .bloop/project-0--test.json[0m
+[0m2021.04.23 11:07:38 INFO  [success] Total time: 0 s, completed Apr 23, 2021 11:07:39 AM[0m
+[0m2021.04.23 11:07:40 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.04.23 11:07:40 INFO  time: ran 'sbt bloopInstall' in 5.67s[0m
+[0m2021.04.23 11:07:40 INFO  Disconnecting from Bloop session...[0m
+[0m2021.04.23 11:07:40 INFO  Shut down connection with build server.[0m
+[0m2021.04.23 11:07:40 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2021.04.23 11:07:40 INFO  Attempting to connect to the build server...[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+Starting the bsp launcher for bloop...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher7914697872525265216/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop'...
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0--test.json'
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0-.json'
+[0m[32m[D][0m Configured SemanticDB in projects 'project-0--test', 'project-0-'
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher7914697872525265216/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher7914697872525265216/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.23 11:07:40 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.23 11:07:40 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher5663090312349720871/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher5663090312349720871/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher5663090312349720871/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.23 11:07:40 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.23 11:07:40 INFO  time: Connected to build server in 0.14s[0m
+[0m2021.04.23 11:07:40 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.04.23 11:07:40 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.04.23 11:07:40 INFO  time: indexed workspace in 0.34s[0m
+[0m2021.04.23 11:07:40 INFO  compiling project-0- (5 scala sources)[0m
+[0m2021.04.23 11:07:42 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+[0m2021.04.23 11:07:42 INFO  time: compiled project-0- in 1.75s[0m
+Apr 23, 2021 11:07:44 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 403
+Apr 23, 2021 11:10:19 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 409
+[0m2021.04.23 11:10:24 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals2043088712393420540/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.04.23 11:10:25 INFO  [info] welcome to sbt 1.4.9 (Private Build Java 1.8.0_282)[0m
+Apr 23, 2021 11:10:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 421
+[0m2021.04.23 11:10:25 INFO  [info] loading settings for project project-0--build-build from metals.sbt ...[0m
+[0m2021.04.23 11:10:27 INFO  [info] loading project definition from /home/timmiller/myfolder/Project[0]/project[0]/project/project[0m
+[0m2021.04.23 11:10:27 INFO  [info] loading settings for project project-0--build from metals.sbt ...[0m
+[0m2021.04.23 11:10:27 INFO  [info] loading project definition from /home/timmiller/myfolder/Project[0]/project[0]/project[0m
+[0m2021.04.23 11:10:29 INFO  [success] Generated .bloop/project-0--build.json[0m
+[0m2021.04.23 11:10:29 INFO  [success] Total time: 2 s, completed Apr 23, 2021 11:10:29 AM[0m
+[0m2021.04.23 11:10:31 INFO  [info] loading settings for project project-0- from build.sbt ...[0m
+[0m2021.04.23 11:10:31 INFO  [info] set current project to hello-world (in build file:/home/timmiller/myfolder/Project%5B0%5D/project%5B0%5D/)[0m
+[0m2021.04.23 11:10:31 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.[0m
+[0m2021.04.23 11:10:31 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.[0m
+[0m2021.04.23 11:10:31 INFO  [success] Generated .bloop/project-0-.json[0m
+[0m2021.04.23 11:10:31 INFO  [success] Generated .bloop/project-0--test.json[0m
+[0m2021.04.23 11:10:31 INFO  [success] Total time: 0 s, completed Apr 23, 2021 11:10:31 AM[0m
+[0m2021.04.23 11:10:32 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.04.23 11:10:32 INFO  time: ran 'sbt bloopInstall' in 7.52s[0m
+[0m2021.04.23 11:10:32 INFO  Disconnecting from Bloop session...[0m
+[0m2021.04.23 11:10:32 INFO  Shut down connection with build server.[0m
+[0m2021.04.23 11:10:32 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.04.23 11:10:32 INFO  Attempting to connect to the build server...[0m
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher1285428561760133768/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop'...
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0-.json'
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0--test.json'
+[0m[32m[D][0m Configured SemanticDB in projects 'project-0-', 'project-0--test'
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher1285428561760133768/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher1285428561760133768/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.23 11:10:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.23 11:10:32 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher5101839588254800824/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher5101839588254800824/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher5101839588254800824/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.23 11:10:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.23 11:10:32 INFO  time: Connected to build server in 0.14s[0m
+[0m2021.04.23 11:10:32 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.04.23 11:10:32 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.04.23 11:10:32 INFO  time: indexed workspace in 0.34s[0m
+[0m2021.04.23 11:10:32 INFO  compiling project-0- (5 scala sources)[0m
+[0m2021.04.23 11:10:32 INFO  compiling project-0- (5 scala sources)[0m
+[0m2021.04.23 11:10:34 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+[0m2021.04.23 11:10:34 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+[0m2021.04.23 11:10:34 INFO  time: compiled project-0- in 1.35s[0m
+Apr 23, 2021 12:48:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 645
+Apr 23, 2021 12:49:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 651
+Apr 23, 2021 12:49:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 678
+Apr 23, 2021 12:50:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 683
+Apr 23, 2021 1:07:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 708
+Apr 23, 2021 1:07:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 713
+Apr 23, 2021 1:07:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 719
+Apr 23, 2021 1:08:01 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Apr 23, 2021 1:08:01 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+scala.MatchError: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+	at scala.tools.nsc.typechecker.Unapplies.constrParamss(Unapplies.scala:87)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth(Unapplies.scala:140)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth$(Unapplies.scala:137)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.factoryMeth(MetalsGlobal.scala:59)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper(MethodSynthesis.scala:238)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper$(MethodSynthesis.scala:237)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterImplicitWrapper(Namers.scala:57)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym(Global.scala:94)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym$(Global.scala:80)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$$anon$2.enterExistingSym(Global.scala:51)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:306)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:478)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:477)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.pluginsEnterSym(MetalsGlobal.scala:59)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:280)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSym(Typers.scala:1979)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSyms(Typers.scala:1974)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:2034)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1934)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5883)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5973)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:6051)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$8(Typers.scala:3397)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3397)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5582)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5885)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5973)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$TyperPhase.apply(Analyzer.scala:117)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:454)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1345)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1338)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:669)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:818)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1230)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:399)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+
+Apr 23, 2021 1:10:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 922
+Apr 23, 2021 1:14:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1158
+Apr 23, 2021 1:15:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1275
+[0m2021.04.23 13:15:18 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:15:18 INFO  time: compiled project-0- in 0.23s[0m
+[0m2021.04.23 13:15:35 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:15:35 INFO  time: compiled project-0- in 0.2s[0m
+[0m2021.04.23 13:15:59 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:15:59 INFO  time: compiled project-0- in 0.15s[0m
+Apr 23, 2021 1:16:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1316
+[0m2021.04.23 13:17:09 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:17:09 INFO  time: compiled project-0- in 0.14s[0m
+[0m2021.04.23 13:17:13 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:17:13 INFO  time: compiled project-0- in 0.16s[0m
+[0m2021.04.23 13:17:25 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:17:25 INFO  time: compiled project-0- in 0.17s[0m
+[0m2021.04.23 13:17:42 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:17:42 INFO  time: compiled project-0- in 0.1s[0m
+[0m2021.04.23 13:17:51 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:17:51 INFO  time: compiled project-0- in 0.14s[0m
+Apr 23, 2021 1:17:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1383
+[0m2021.04.23 13:18:23 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/FileUtil.scala:12:55: stale bloop error: could not find implicit value for evidence parameter of type argonaut.EncodeJson[scala.collection.mutable.ArrayBuffer[Project0.Follower]]
+    implicit def PlayerCodecJson: CodecJson[Player] = casecodec5(Player.apply, Player.unapply)("playerID","playerName","characterName", "goldTotal", "-")
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.04.23 13:18:23 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/FileUtil.scala:12:55: stale bloop error: could not find implicit value for evidence parameter of type argonaut.EncodeJson[scala.collection.mutable.ArrayBuffer[Project0.Follower]]
+    implicit def PlayerCodecJson: CodecJson[Player] = casecodec5(Player.apply, Player.unapply)("playerID","playerName","characterName", "goldTotal", "-")
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.04.23 13:18:29 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:18:29 INFO  time: compiled project-0- in 0.13s[0m
+[0m2021.04.23 13:21:30 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:21:30 INFO  time: compiled project-0- in 87ms[0m
+Apr 23, 2021 1:22:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1614
+[0m2021.04.23 13:22:12 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals6094119083379650241/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.04.23 13:22:13 INFO  [info] welcome to sbt 1.4.9 (Private Build Java 1.8.0_282)[0m
+[0m2021.04.23 13:22:13 INFO  [info] loading settings for project project-0--build-build from metals.sbt ...[0m
+[0m2021.04.23 13:22:14 INFO  [info] loading project definition from /home/timmiller/myfolder/Project[0]/project[0]/project/project[0m
+[0m2021.04.23 13:22:14 INFO  [info] loading settings for project project-0--build from metals.sbt ...[0m
+[0m2021.04.23 13:22:14 INFO  [info] loading project definition from /home/timmiller/myfolder/Project[0]/project[0]/project[0m
+Apr 23, 2021 1:22:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1638
+[0m2021.04.23 13:22:16 INFO  [success] Generated .bloop/project-0--build.json[0m
+[0m2021.04.23 13:22:16 INFO  [success] Total time: 2 s, completed Apr 23, 2021 1:22:16 PM[0m
+[0m2021.04.23 13:22:18 INFO  [info] loading settings for project project-0- from build.sbt ...[0m
+[0m2021.04.23 13:22:18 INFO  [info] set current project to hello-world (in build file:/home/timmiller/myfolder/Project%5B0%5D/project%5B0%5D/)[0m
+[0m2021.04.23 13:22:18 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.[0m
+[0m2021.04.23 13:22:19 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.[0m
+[0m2021.04.23 13:22:19 INFO  [success] Generated .bloop/project-0-.json[0m
+[0m2021.04.23 13:22:19 INFO  [success] Generated .bloop/project-0--test.json[0m
+[0m2021.04.23 13:22:19 INFO  [success] Total time: 1 s, completed Apr 23, 2021 1:22:19 PM[0m
+[0m2021.04.23 13:22:19 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.04.23 13:22:19 INFO  time: ran 'sbt bloopInstall' in 7.6s[0m
+[0m2021.04.23 13:22:19 INFO  Disconnecting from Bloop session...[0m
+[0m2021.04.23 13:22:19 INFO  Shut down connection with build server.[0m
+[0m2021.04.23 13:22:19 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.04.23 13:22:19 INFO  Attempting to connect to the build server...[0m
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher3471489607723427470/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop'...
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0-.json'
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0--test.json'
+[0m[32m[D][0m Configured SemanticDB in projects 'project-0-', 'project-0--test'
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher3471489607723427470/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher3471489607723427470/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.23 13:22:19 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.23 13:22:19 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher4087508137365670298/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher4087508137365670298/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher4087508137365670298/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.23 13:22:19 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.23 13:22:19 INFO  time: Connected to build server in 0.13s[0m
+[0m2021.04.23 13:22:19 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.04.23 13:22:20 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.04.23 13:22:20 INFO  time: indexed workspace in 0.33s[0m
+[0m2021.04.23 13:22:20 INFO  compiling project-0- (5 scala sources)[0m
+[0m2021.04.23 13:22:20 INFO  time: compiled project-0- in 0.34s[0m
+[0m2021.04.23 13:22:52 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/FileUtil.scala:12:22: stale bloop error: overloaded method apply with alternatives:
+  (arg: os.Path,charSet: scala.io.Codec,offset: Long,count: Int)String <and>
+  (arg: os.ReadablePath)String
+ cannot be applied to (String)
+    val jsonString = os.read("players.json")
+                     ^^^^^^^[0m
+[0m2021.04.23 13:22:52 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/FileUtil.scala:12:22: stale bloop error: overloaded method apply with alternatives:
+  (arg: os.Path,charSet: scala.io.Codec,offset: Long,count: Int)String <and>
+  (arg: os.ReadablePath)String
+ cannot be applied to (String)
+    val jsonString = os.read("players.json")
+                     ^^^^^^^[0m
+[0m2021.04.23 13:23:00 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/FileUtil.scala:12:22: stale bloop error: overloaded method apply with alternatives:
+  (arg: os.Path,charSet: scala.io.Codec,offset: Long,count: Int)String <and>
+  (arg: os.ReadablePath)String
+ cannot be applied to (String)
+    val jsonString = os.read("players.json")
+                     ^^^^^^^[0m
+[0m2021.04.23 13:23:00 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/FileUtil.scala:12:22: stale bloop error: overloaded method apply with alternatives:
+  (arg: os.Path,charSet: scala.io.Codec,offset: Long,count: Int)String <and>
+  (arg: os.ReadablePath)String
+ cannot be applied to (String)
+    val jsonString = os.read("players.json")
+                     ^^^^^^^[0m
+[0m2021.04.23 13:23:19 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/FileUtil.scala:12:22: stale bloop error: overloaded method apply with alternatives:
+  (arg: os.Path,charSet: scala.io.Codec,offset: Long,count: Int)String <and>
+  (arg: os.ReadablePath)String
+ cannot be applied to (String)
+    val jsonString = os.read("players.json")
+                     ^^^^^^^[0m
+[0m2021.04.23 13:23:19 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/FileUtil.scala:12:22: stale bloop error: overloaded method apply with alternatives:
+  (arg: os.Path,charSet: scala.io.Codec,offset: Long,count: Int)String <and>
+  (arg: os.ReadablePath)String
+ cannot be applied to (String)
+    val jsonString = os.read("players.json")
+                     ^^^^^^^[0m
+[0m2021.04.23 13:23:31 INFO  compiling project-0- (5 scala sources)[0m
+[0m2021.04.23 13:23:32 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+[0m2021.04.23 13:23:32 INFO  time: compiled project-0- in 1.28s[0m
+[0m2021.04.23 13:24:34 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:24:34 INFO  time: compiled project-0- in 0.65s[0m
+[0m2021.04.23 13:25:40 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:25:40 INFO  time: compiled project-0- in 0.38s[0m
+Apr 23, 2021 1:25:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2046
+[0m2021.04.23 13:26:18 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:26:18 INFO  time: compiled project-0- in 0.45s[0m
+[0m2021.04.23 13:26:36 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:26:36 INFO  time: compiled project-0- in 0.37s[0m
+Apr 23, 2021 1:26:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2178
+Apr 23, 2021 1:26:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2185
+[0m2021.04.23 13:26:49 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:26:49 INFO  time: compiled project-0- in 0.39s[0m
+Apr 23, 2021 1:27:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2219
+[0m2021.04.23 13:27:36 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:27:36 INFO  time: compiled project-0- in 0.4s[0m
+Apr 23, 2021 1:27:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2239
+Apr 23, 2021 1:28:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2402
+Apr 23, 2021 1:28:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2440
+Apr 23, 2021 1:29:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2446
+[0m2021.04.23 13:30:24 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:30:24 INFO  time: compiled project-0- in 0.52s[0m
+[0m2021.04.23 13:30:36 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:30:36 INFO  time: compiled project-0- in 90ms[0m
+[0m2021.04.23 13:31:17 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:31:17 INFO  time: compiled project-0- in 0.54s[0m
+[0m2021.04.23 13:31:29 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:31:29 INFO  time: compiled project-0- in 0.53s[0m
+Apr 23, 2021 1:31:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2858
+[0m2021.04.23 13:32:11 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:32:11 INFO  time: compiled project-0- in 84ms[0m
+Apr 23, 2021 1:32:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2963
+Apr 23, 2021 1:32:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2972
+[0m2021.04.23 13:32:35 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:32:35 INFO  time: compiled project-0- in 0.44s[0m
+[0m2021.04.23 13:32:54 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:32:54 INFO  time: compiled project-0- in 0.61s[0m
+[0m2021.04.23 13:33:38 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:33:38 INFO  time: compiled project-0- in 0.59s[0m
+[0m2021.04.23 13:34:13 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:34:13 INFO  time: compiled project-0- in 0.53s[0m
+[0m2021.04.23 13:34:56 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:34:56 INFO  time: compiled project-0- in 0.66s[0m
+[0m2021.04.23 13:38:17 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:38:17 INFO  time: compiled project-0- in 0.41s[0m
+[0m2021.04.23 13:42:04 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:42:04 INFO  time: compiled project-0- in 0.41s[0m
+Apr 23, 2021 1:44:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3863
+[0m2021.04.23 13:45:05 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:45:05 INFO  time: compiled project-0- in 0.39s[0m
+Apr 23, 2021 1:45:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3876
+[0m2021.04.23 13:45:34 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:45:34 INFO  time: compiled project-0- in 89ms[0m
+[0m2021.04.23 13:46:11 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:46:11 INFO  time: compiled project-0- in 84ms[0m
+[0m2021.04.23 13:46:33 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:46:33 INFO  time: compiled project-0- in 0.54s[0m
+[0m2021.04.23 13:47:06 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/dap-server.trace.json[0m
+[0m2021.04.23 13:47:06 INFO  Listening for transport dt_socket at address: 41493[0m
+[0m2021.04.23 13:47:06 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/dap-client.trace.json[0m
+[0m2021.04.23 13:47:06 INFO  Starting debug proxy for [Project0.Main][0m
+[0m2021.04.23 13:47:06 INFO  Trying to attach to remote debuggee VM localhost:41493 .[0m
+[0m2021.04.23 13:47:06 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.04.23 13:47:06 INFO  Hello, 	 World! 👺[0m
+[0m2021.04.23 13:47:06 ERROR Exception in thread "main" ujson.Value$InvalidData: Expected ujson.Obj (data: [{"playerID":3,"playerName":"Fannie","characterName":"in","goldTotal":4493},{"playerID":4,"playerName":"Genevieve","characterName":"nisi","goldTotal":1083},{"playerID":5,"playerName":"Gertrude","characterName":"ad","goldTotal":1578},{"playerID":6,"playerName":"Baldwin","characterName":"ipsum","goldTotal":4211},{"playerID":7,"playerName":"Black","characterName":"mollit","goldTotal":2120},{"playerID":8,"playerName":"Blake","characterName":"mollit","goldTotal":983}])[0m
+[0m2021.04.23 13:47:06 ERROR 	at ujson.Value.obj(Value.scala:39)[0m
+[0m2021.04.23 13:47:06 ERROR 	at ujson.Value.obj$(Value.scala:37)[0m
+[0m2021.04.23 13:47:06 ERROR 	at ujson.Arr.obj(Value.scala:254)[0m
+[0m2021.04.23 13:47:06 ERROR 	at ujson.Value$Selector$StringSelector.apply(Value.scala:141)[0m
+[0m2021.04.23 13:47:06 ERROR 	at ujson.Value.apply(Value.scala:101)[0m
+[0m2021.04.23 13:47:06 ERROR 	at ujson.Value.apply$(Value.scala:101)[0m
+[0m2021.04.23 13:47:06 ERROR 	at ujson.Arr.apply(Value.scala:254)[0m
+[0m2021.04.23 13:47:06 ERROR 	at Project0.Main$.main(Main.scala:15)[0m
+[0m2021.04.23 13:47:06 ERROR 	at Project0.Main.main(Main.scala)[0m
+[0m2021.04.23 13:47:07 INFO  Canceling debug proxy for [Project0.Main][0m
+[0m2021.04.23 13:47:30 INFO  Deduplicating compilation of project-0- from bsp client 'Metals 0.10.1' (since 25m 10.987s)[0m
+[0m2021.04.23 13:47:30 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/dap-server.trace.json[0m
+[0m2021.04.23 13:47:30 INFO  Listening for transport dt_socket at address: 41459[0m
+[0m2021.04.23 13:47:30 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/dap-client.trace.json[0m
+[0m2021.04.23 13:47:31 INFO  Starting debug proxy for [Project0.Main][0m
+[0m2021.04.23 13:47:30 INFO  Trying to attach to remote debuggee VM localhost:41459 .[0m
+[0m2021.04.23 13:47:30 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.04.23 13:47:30 INFO  Hello, 	 World! 👺[0m
+[0m2021.04.23 13:47:30 ERROR Exception in thread "main" ujson.Value$InvalidData: Expected ujson.Obj (data: [{"playerID":3,"playerName":"Fannie","characterName":"in","goldTotal":4493},{"playerID":4,"playerName":"Genevieve","characterName":"nisi","goldTotal":1083},{"playerID":5,"playerName":"Gertrude","characterName":"ad","goldTotal":1578},{"playerID":6,"playerName":"Baldwin","characterName":"ipsum","goldTotal":4211},{"playerID":7,"playerName":"Black","characterName":"mollit","goldTotal":2120},{"playerID":8,"playerName":"Blake","characterName":"mollit","goldTotal":983}])[0m
+[0m2021.04.23 13:47:30 ERROR 	at ujson.Value.obj(Value.scala:39)[0m
+[0m2021.04.23 13:47:30 ERROR 	at ujson.Value.obj$(Value.scala:37)[0m
+[0m2021.04.23 13:47:30 ERROR 	at ujson.Arr.obj(Value.scala:254)[0m
+[0m2021.04.23 13:47:30 ERROR 	at ujson.Value$Selector$StringSelector.apply(Value.scala:141)[0m
+[0m2021.04.23 13:47:30 ERROR 	at ujson.Value.apply(Value.scala:101)[0m
+[0m2021.04.23 13:47:30 ERROR 	at ujson.Value.apply$(Value.scala:101)[0m
+[0m2021.04.23 13:47:30 ERROR 	at ujson.Arr.apply(Value.scala:254)[0m
+[0m2021.04.23 13:47:30 ERROR 	at Project0.Main$.main(Main.scala:15)[0m
+[0m2021.04.23 13:47:30 ERROR 	at Project0.Main.main(Main.scala)[0m
+[0m2021.04.23 13:47:31 INFO  Canceling debug proxy for [Project0.Main][0m
+[0m2021.04.23 13:47:37 INFO  Deduplicating compilation of project-0- from bsp client 'Metals 0.10.1' (since 25m 17.185s)[0m
+[0m2021.04.23 13:47:37 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/dap-server.trace.json[0m
+[0m2021.04.23 13:47:37 INFO  Listening for transport dt_socket at address: 40777[0m
+[0m2021.04.23 13:47:37 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/dap-client.trace.json[0m
+[0m2021.04.23 13:47:37 INFO  Starting debug proxy for [Project0.Main][0m
+[0m2021.04.23 13:47:37 INFO  Trying to attach to remote debuggee VM localhost:40777 .[0m
+[0m2021.04.23 13:47:37 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.04.23 13:47:52 INFO  time: code lens generation in 2.32s[0m
+[0m2021.04.23 13:47:53 INFO  no build target: using presentation compiler with only scala-library: 2.13.3[0m
+[0m2021.04.23 13:48:54 INFO  Hello, 	 World! 👺[0m
+[0m2021.04.23 13:48:54 ERROR Exception in thread "main" ujson.Value$InvalidData: Expected ujson.Obj (data: [{"playerID":3,"playerName":"Fannie","characterName":"in","goldTotal":4493},{"playerID":4,"playerName":"Genevieve","characterName":"nisi","goldTotal":1083},{"playerID":5,"playerName":"Gertrude","characterName":"ad","goldTotal":1578},{"playerID":6,"playerName":"Baldwin","characterName":"ipsum","goldTotal":4211},{"playerID":7,"playerName":"Black","characterName":"mollit","goldTotal":2120},{"playerID":8,"playerName":"Blake","characterName":"mollit","goldTotal":983}])[0m
+[0m2021.04.23 13:48:54 ERROR 	at ujson.Value.obj(Value.scala:39)[0m
+[0m2021.04.23 13:48:54 ERROR 	at ujson.Value.obj$(Value.scala:37)[0m
+[0m2021.04.23 13:48:54 ERROR 	at ujson.Arr.obj(Value.scala:254)[0m
+[0m2021.04.23 13:48:54 ERROR 	at ujson.Value$Selector$StringSelector.apply(Value.scala:141)[0m
+[0m2021.04.23 13:48:54 ERROR 	at ujson.Value.apply(Value.scala:101)[0m
+[0m2021.04.23 13:48:54 ERROR 	at ujson.Value.apply$(Value.scala:101)[0m
+[0m2021.04.23 13:48:54 ERROR 	at ujson.Arr.apply(Value.scala:254)[0m
+[0m2021.04.23 13:48:54 ERROR 	at Project0.Main$.main(Main.scala:15)[0m
+[0m2021.04.23 13:48:54 ERROR 	at Project0.Main.main(Main.scala)[0m
+[0m2021.04.23 13:48:54 INFO  Canceling debug proxy for [Project0.Main][0m
+[0m2021.04.23 13:49:03 INFO  Deduplicating compilation of project-0- from bsp client 'Metals 0.10.1' (since 26m 43.504s)[0m
+[0m2021.04.23 13:49:03 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/dap-server.trace.json[0m
+[0m2021.04.23 13:49:03 INFO  Listening for transport dt_socket at address: 46543[0m
+[0m2021.04.23 13:49:03 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/dap-client.trace.json[0m
+[0m2021.04.23 13:49:03 INFO  Starting debug proxy for [Project0.Main][0m
+[0m2021.04.23 13:49:03 INFO  Trying to attach to remote debuggee VM localhost:46543 .[0m
+[0m2021.04.23 13:49:03 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.04.23 13:49:03 INFO  Hello, 	 World! 👺[0m
+[0m2021.04.23 13:49:03 ERROR Exception in thread "main" ujson.Value$InvalidData: Expected ujson.Obj (data: [{"playerID":3,"playerName":"Fannie","characterName":"in","goldTotal":4493},{"playerID":4,"playerName":"Genevieve","characterName":"nisi","goldTotal":1083},{"playerID":5,"playerName":"Gertrude","characterName":"ad","goldTotal":1578},{"playerID":6,"playerName":"Baldwin","characterName":"ipsum","goldTotal":4211},{"playerID":7,"playerName":"Black","characterName":"mollit","goldTotal":2120},{"playerID":8,"playerName":"Blake","characterName":"mollit","goldTotal":983}])[0m
+[0m2021.04.23 13:49:03 ERROR 	at ujson.Value.obj(Value.scala:39)[0m
+[0m2021.04.23 13:49:03 ERROR 	at ujson.Value.obj$(Value.scala:37)[0m
+[0m2021.04.23 13:49:03 ERROR 	at ujson.Arr.obj(Value.scala:254)[0m
+[0m2021.04.23 13:49:03 ERROR 	at ujson.Value$Selector$StringSelector.apply(Value.scala:141)[0m
+[0m2021.04.23 13:49:03 ERROR 	at ujson.Value.apply(Value.scala:101)[0m
+[0m2021.04.23 13:49:03 ERROR 	at ujson.Value.apply$(Value.scala:101)[0m
+[0m2021.04.23 13:49:03 ERROR 	at ujson.Arr.apply(Value.scala:254)[0m
+[0m2021.04.23 13:49:03 ERROR 	at Project0.Main$.main(Main.scala:15)[0m
+[0m2021.04.23 13:49:03 ERROR 	at Project0.Main.main(Main.scala)[0m
+[0m2021.04.23 13:49:03 INFO  Canceling debug proxy for [Project0.Main][0m
+[0m2021.04.23 13:49:17 INFO  Deduplicating compilation of project-0- from bsp client 'Metals 0.10.1' (since 26m 57.628s)[0m
+[0m2021.04.23 13:49:17 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:49:17 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:49:17 INFO  time: compiled project-0- in 0.44s[0m
+[0m2021.04.23 13:49:18 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/dap-server.trace.json[0m
+[0m2021.04.23 13:49:17 INFO  Listening for transport dt_socket at address: 36845[0m
+[0m2021.04.23 13:49:18 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/dap-client.trace.json[0m
+[0m2021.04.23 13:49:18 INFO  Starting debug proxy for [Project0.Main][0m
+[0m2021.04.23 13:49:17 INFO  Trying to attach to remote debuggee VM localhost:36845 .[0m
+[0m2021.04.23 13:49:17 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.04.23 13:49:17 INFO  Hello, 	 World! 👺[0m
+[0m2021.04.23 13:49:18 INFO  Canceling debug proxy for [Project0.Main][0m
+[0m2021.04.23 13:49:29 INFO  Deduplicating compilation of project-0- from bsp client 'Metals 0.10.1' (since 27m 9.695s)[0m
+[0m2021.04.23 13:49:29 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/dap-server.trace.json[0m
+[0m2021.04.23 13:49:29 INFO  Listening for transport dt_socket at address: 40215[0m
+[0m2021.04.23 13:49:29 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/dap-client.trace.json[0m
+[0m2021.04.23 13:49:29 INFO  Starting debug proxy for [Project0.Main][0m
+[0m2021.04.23 13:49:29 INFO  Trying to attach to remote debuggee VM localhost:40215 .[0m
+[0m2021.04.23 13:49:29 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.04.23 13:49:29 INFO  Hello, 	 World! 👺[0m
+[0m2021.04.23 13:49:34 ERROR [error response][evaluate]: an implementation is missing[0m
+[0m2021.04.23 13:49:56 ERROR [error response][evaluate]: an implementation is missing[0m
+[0m2021.04.23 13:49:59 ERROR [error response][evaluate]: an implementation is missing[0m
+[0m2021.04.23 13:50:16 INFO  Canceling debug proxy for [Project0.Main][0m
+[0m2021.04.23 13:50:16 INFO  Listening for transport dt_socket at address: 42229[0m
+[0m2021.04.23 13:50:39 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:50:39 INFO  time: compiled project-0- in 0.45s[0m
+[0m2021.04.23 13:53:59 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:53:59 INFO  time: compiled project-0- in 0.58s[0m
+[0m2021.04.23 13:54:44 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:54:44 INFO  time: compiled project-0- in 86ms[0m
+[0m2021.04.23 13:56:06 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:56:06 INFO  time: compiled project-0- in 94ms[0m
+[0m2021.04.23 13:58:00 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:58:00 INFO  time: compiled project-0- in 0.55s[0m
+[0m2021.04.23 13:58:40 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 13:58:40 INFO  time: compiled project-0- in 65ms[0m
+[0m2021.04.23 14:02:01 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 14:02:01 INFO  time: compiled project-0- in 0.58s[0m
+[0m2021.04.23 14:03:40 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 14:03:40 INFO  time: compiled project-0- in 91ms[0m
+[0m2021.04.23 14:04:02 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 14:04:02 INFO  time: compiled project-0- in 0.55s[0m
+[0m2021.04.23 14:04:20 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.23 14:04:20 INFO  time: compiled project-0- in 0.53s[0m
+[0m2021.04.23 14:05:05 INFO  shutting down Metals[0m
+[0m2021.04.23 14:05:05 INFO  Shut down connection with build server.[0m
+[0m2021.04.23 14:05:05 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.04.23 20:08:40 INFO  Started: Metals version 0.10.2 in workspace '/home/timmiller/myfolder/Project[0]/project[0]' for client vscode 1.55.2.[0m
+[0m2021.04.23 20:08:40 INFO  time: initialize in 0.31s[0m
+[0m2021.04.23 20:08:40 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher3865258879534426319/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.04.23 20:08:40 WARN  no build target for: /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala[0m
+[0m2021.04.23 20:08:40 WARN  no build target for: /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/GameCli.scala[0m
+[0m2021.04.23 20:08:40 INFO  skipping build import with status 'Installed'[0m
+Waiting for the bsp connection to come up...
+[0m2021.04.23 20:08:42 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.8-19-4d9f966b...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop'...
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0-.json'
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0--test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.3.
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'project-0-', 'project-0--test'
+[0m[32m[D][0m Missing analysis file for project 'project-0--test'
+[0m[32m[D][0m Loading previous analysis for 'project-0-' from '/home/timmiller/myfolder/Project[0]/project[0]/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher3865258879534426319/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher3865258879534426319/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.23 20:08:44 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.23 20:08:45 INFO  time: code lens generation in 3.97s[0m
+[0m2021.04.23 20:08:47 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher1064499015227840346/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher1064499015227840346/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher1064499015227840346/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.23 20:08:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.23 20:08:48 INFO  time: Connected to build server in 7.45s[0m
+[0m2021.04.23 20:08:48 INFO  Connected to Build server: Bloop v1.4.8-19-4d9f966b[0m
+[0m2021.04.23 20:08:48 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.04.23 20:08:49 INFO  time: indexed workspace in 1.06s[0m
+[0m2021.04.23 20:08:50 INFO  compiling project-0- (5 scala sources)[0m
+[0m2021.04.23 20:08:55 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+[0m2021.04.23 20:08:55 INFO  time: compiled project-0- in 5.16s[0m
+Apr 23, 2021 8:18:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 20
+Apr 23, 2021 11:03:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 54
+[0m2021.04.24 00:08:52 INFO  no build target: using presentation compiler with only scala-library: 2.13.3[0m
+[0m2021.04.24 00:09:35 INFO  shutting down Metals[0m
+[0m2021.04.24 00:09:35 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2021.04.24 00:09:35 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.04.24 09:18:35 INFO  Started: Metals version 0.10.2 in workspace '/home/timmiller/myfolder/Project[0]/project[0]' for client vscode 1.55.2.[0m
+[0m2021.04.24 09:18:36 INFO  time: initialize in 0.31s[0m
+[0m2021.04.24 09:18:35 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher3342704869031709400/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.04.24 09:18:36 WARN  no build target for: /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala[0m
+[0m2021.04.24 09:18:36 INFO  skipping build import with status 'Installed'[0m
+Waiting for the bsp connection to come up...
+[0m2021.04.24 09:18:37 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.8-19-4d9f966b...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop'...
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0--test.json'
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0-.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.3.
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'project-0-', 'project-0--test'
+[0m[32m[D][0m Missing analysis file for project 'project-0--test'
+[0m[32m[D][0m Loading previous analysis for 'project-0-' from '/home/timmiller/myfolder/Project[0]/project[0]/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher3342704869031709400/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher3342704869031709400/bsp.socket...
+[0m2021.04.24 09:18:39 INFO  time: code lens generation in 2.25s[0m
+[0m2021.04.24 09:18:39 INFO  time: code lens generation in 2.38s[0m
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.24 09:18:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.24 09:18:39 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher4872330547974647763/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher4872330547974647763/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher4872330547974647763/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.24 09:18:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.24 09:18:39 INFO  time: Connected to build server in 2.89s[0m
+[0m2021.04.24 09:18:39 INFO  Connected to Build server: Bloop v1.4.8-19-4d9f966b[0m
+[0m2021.04.24 09:18:40 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.04.24 09:18:40 INFO  time: indexed workspace in 1s[0m
+[0m2021.04.24 09:18:40 INFO  compiling project-0- (5 scala sources)[0m
+[0m2021.04.24 09:18:45 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+[0m2021.04.24 09:18:45 INFO  time: compiled project-0- in 5.14s[0m
+Apr 24, 2021 9:19:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 136
+[0m2021.04.24 09:19:33 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 09:19:33 INFO  time: compiled project-0- in 0.67s[0m
+[0m2021.04.24 09:20:00 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 09:20:00 INFO  time: compiled project-0- in 0.78s[0m
+[0m2021.04.24 09:20:08 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 09:20:08 INFO  time: compiled project-0- in 0.76s[0m
+[0m2021.04.24 09:20:34 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 09:20:34 INFO  time: compiled project-0- in 0.64s[0m
+[0m2021.04.24 09:20:46 INFO  shutting down Metals[0m
+[0m2021.04.24 09:20:46 INFO  Shut down connection with build server.[0m
+[0m2021.04.24 09:20:46 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.04.24 14:47:47 INFO  Started: Metals version 0.10.2 in workspace '/home/timmiller/myfolder/Project[0]/project[0]' for client vscode 1.55.2.[0m
+[0m2021.04.24 14:47:48 INFO  time: initialize in 0.32s[0m
+[0m2021.04.24 14:47:47 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher1379479439909425704/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.04.24 14:47:48 WARN  no build target for: /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala[0m
+[0m2021.04.24 14:47:48 WARN  no build target for: /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/LoginCli.scala[0m
+[0m2021.04.24 14:47:48 INFO  skipping build import with status 'Installed'[0m
+Waiting for the bsp connection to come up...
+[0m2021.04.24 14:47:49 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.8-19-4d9f966b...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop'...
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0-.json'
+[0m[32m[D][0m Loading project from '/home/timmiller/myfolder/Project[0]/project[0]/.bloop/project-0--test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.3.
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+[0m[32m[D][0m   => /home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'project-0-', 'project-0--test'
+[0m[32m[D][0m Missing analysis file for project 'project-0--test'
+[0m[32m[D][0m Loading previous analysis for 'project-0-' from '/home/timmiller/myfolder/Project[0]/project[0]/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher1379479439909425704/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher1379479439909425704/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.24 14:47:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.24 14:47:51 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher5318329301162007048/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher5318329301162007048/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher5318329301162007048/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.24 14:47:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.24 14:47:51 INFO  time: Connected to build server in 2.91s[0m
+[0m2021.04.24 14:47:51 INFO  Connected to Build server: Bloop v1.4.8-19-4d9f966b[0m
+[0m2021.04.24 14:47:51 INFO  time: code lens generation in 2.82s[0m
+[0m2021.04.24 14:47:51 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+[0m2021.04.24 14:47:52 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.04.24 14:47:52 INFO  time: indexed workspace in 1.2s[0m
+[0m2021.04.24 17:57:09 INFO  compiling project-0- (1 scala source)[0m
+Apr 24, 2021 5:57:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 455
+[0m2021.04.24 17:57:12 INFO  time: compiled project-0- in 2.99s[0m
+[0m2021.04.24 17:59:34 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 17:59:34 INFO  time: compiled project-0- in 0.86s[0m
+[0m2021.04.24 18:00:25 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:00:25 INFO  time: compiled project-0- in 0.69s[0m
+[0m2021.04.24 18:01:03 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:01:03 INFO  time: compiled project-0- in 0.79s[0m
+[0m2021.04.24 18:02:57 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:02:57 INFO  time: compiled project-0- in 0.24s[0m
+[0m2021.04.24 18:03:11 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:03:11 INFO  time: compiled project-0- in 0.18s[0m
+[0m2021.04.24 18:03:18 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:03:18 INFO  time: compiled project-0- in 0.8s[0m
+[0m2021.04.24 18:19:27 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:19:27 INFO  time: compiled project-0- in 0.12s[0m
+[0m2021.04.24 18:19:39 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:19:39 INFO  time: compiled project-0- in 76ms[0m
+[0m2021.04.24 18:19:51 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:19:51 INFO  time: compiled project-0- in 63ms[0m
+[0m2021.04.24 18:20:01 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:20:01 INFO  time: compiled project-0- in 0.11s[0m
+[0m2021.04.24 18:20:08 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:20:08 INFO  time: compiled project-0- in 0.14s[0m
+[0m2021.04.24 18:20:25 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:20:25 INFO  time: compiled project-0- in 0.56s[0m
+[0m2021.04.24 18:20:32 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:20:32 INFO  time: compiled project-0- in 0.66s[0m
+[0m2021.04.24 18:20:43 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:20:43 INFO  time: compiled project-0- in 0.11s[0m
+[0m2021.04.24 18:20:47 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:20:47 INFO  time: compiled project-0- in 0.11s[0m
+[0m2021.04.24 18:21:07 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:21:07 INFO  time: compiled project-0- in 0.13s[0m
+[0m2021.04.24 18:21:21 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:21:21 INFO  time: compiled project-0- in 0.1s[0m
+[0m2021.04.24 18:21:31 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:21:31 INFO  time: compiled project-0- in 0.11s[0m
+[0m2021.04.24 18:21:41 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:21:41 INFO  time: compiled project-0- in 0.52s[0m
+[0m2021.04.24 18:22:39 INFO  time: code lens generation in 3.65s[0m
+Apr 24, 2021 6:22:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1600
+Apr 24, 2021 6:22:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1605
+Apr 24, 2021 6:23:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1618
+[0m2021.04.24 18:42:57 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:42:57 INFO  time: compiled project-0- in 62ms[0m
+[0m2021.04.24 18:43:10 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:43:10 INFO  time: compiled project-0- in 84ms[0m
+[0m2021.04.24 18:43:24 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:43:24 INFO  time: compiled project-0- in 85ms[0m
+[0m2021.04.24 18:43:28 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:43:28 INFO  time: compiled project-0- in 0.48s[0m
+[0m2021.04.24 18:45:25 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:45:25 INFO  time: compiled project-0- in 84ms[0m
+[0m2021.04.24 18:45:31 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:45:31 INFO  time: compiled project-0- in 0.47s[0m
+[0m2021.04.24 18:46:10 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:46:10 INFO  time: compiled project-0- in 0.5s[0m
+[0m2021.04.24 18:47:39 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:47:39 INFO  time: compiled project-0- in 0.47s[0m
+[0m2021.04.24 18:47:48 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:47:48 INFO  time: compiled project-0- in 80ms[0m
+[0m2021.04.24 18:47:56 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:47:56 INFO  time: compiled project-0- in 0.49s[0m
+[0m2021.04.24 18:48:14 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 18:48:14 INFO  time: compiled project-0- in 0.47s[0m
+[0m2021.04.24 19:00:13 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 19:00:13 INFO  time: compiled project-0- in 0.52s[0m
+Apr 24, 2021 7:16:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2744
+[0m2021.04.24 19:16:59 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 19:16:59 INFO  time: compiled project-0- in 0.67s[0m
+[0m2021.04.24 19:17:25 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 19:17:25 INFO  time: compiled project-0- in 0.6s[0m
+[0m2021.04.24 19:17:34 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 19:17:34 INFO  time: compiled project-0- in 0.6s[0m
+[0m2021.04.24 19:18:08 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 19:18:08 INFO  time: compiled project-0- in 0.54s[0m
+[0m2021.04.24 19:18:23 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 19:18:23 INFO  time: compiled project-0- in 0.42s[0m
+Apr 24, 2021 7:18:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2997
+Apr 24, 2021 7:18:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3008
+Apr 24, 2021 7:55:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3055
+Apr 24, 2021 7:56:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3127
+Apr 24, 2021 7:56:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3133
+[0m2021.04.24 19:56:22 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 19:56:22 INFO  time: compiled project-0- in 60ms[0m
+[0m2021.04.24 19:56:29 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 19:56:29 INFO  time: compiled project-0- in 50ms[0m
+Apr 24, 2021 7:56:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3188
+[0m2021.04.24 19:56:38 INFO  compiling project-0- (2 scala sources)[0m
+[0m2021.04.24 19:56:38 INFO  time: compiled project-0- in 90ms[0m
+[0m2021.04.24 19:57:22 INFO  compiling project-0- (2 scala sources)[0m
+[0m2021.04.24 19:57:22 INFO  time: compiled project-0- in 94ms[0m
+Apr 24, 2021 7:57:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3248
+Apr 24, 2021 7:57:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3274
+[0m2021.04.24 19:57:41 INFO  compiling project-0- (2 scala sources)[0m
+[0m2021.04.24 19:57:41 INFO  time: compiled project-0- in 0.1s[0m
+Apr 24, 2021 7:57:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3302
+[0m2021.04.24 19:57:47 INFO  compiling project-0- (2 scala sources)[0m
+[0m2021.04.24 19:57:47 INFO  time: compiled project-0- in 94ms[0m
+[0m2021.04.24 19:57:53 INFO  compiling project-0- (2 scala sources)[0m
+[0m2021.04.24 19:57:53 INFO  time: compiled project-0- in 0.61s[0m
+Apr 24, 2021 7:57:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3346
+Apr 24, 2021 7:58:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3353
+Apr 24, 2021 7:58:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3359
+Apr 24, 2021 8:00:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3568
+Apr 24, 2021 8:00:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3575
+[0m2021.04.24 20:01:02 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 20:01:02 INFO  time: compiled project-0- in 53ms[0m
+[0m2021.04.24 20:01:29 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 20:01:29 INFO  time: compiled project-0- in 81ms[0m
+[0m2021.04.24 20:01:37 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 20:01:37 INFO  time: compiled project-0- in 0.64s[0m
+[0m2021.04.24 20:02:04 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 20:02:04 INFO  time: compiled project-0- in 0.56s[0m
+Apr 24, 2021 8:02:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3791
+Apr 24, 2021 8:02:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3797
+[0m2021.04.24 20:02:51 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 20:02:51 INFO  time: compiled project-0- in 0.71s[0m
+[0m2021.04.24 20:04:01 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 20:04:01 INFO  time: compiled project-0- in 0.57s[0m
+[0m2021.04.24 20:43:17 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 20:43:17 INFO  time: compiled project-0- in 91ms[0m
+[0m2021.04.24 20:43:22 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 20:43:22 INFO  time: compiled project-0- in 80ms[0m
+[0m2021.04.24 20:43:30 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 20:43:30 INFO  time: compiled project-0- in 0.57s[0m
+Apr 24, 2021 9:08:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4895
+Apr 24, 2021 9:08:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4906
+Apr 24, 2021 9:08:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4915
+[0m2021.04.24 21:13:20 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 21:13:20 INFO  time: compiled project-0- in 61ms[0m
+[0m2021.04.24 21:15:26 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 21:15:26 INFO  time: compiled project-0- in 53ms[0m
+[0m2021.04.24 21:15:40 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 21:15:40 INFO  time: compiled project-0- in 65ms[0m
+[0m2021.04.24 21:15:47 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 21:15:47 INFO  time: compiled project-0- in 83ms[0m
+[0m2021.04.24 21:16:19 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 21:16:19 INFO  time: compiled project-0- in 0.61s[0m
+[0m2021.04.24 21:16:32 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 21:16:32 INFO  time: compiled project-0- in 95ms[0m
+[0m2021.04.24 21:16:40 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 21:16:40 INFO  time: compiled project-0- in 82ms[0m
+[0m2021.04.24 21:16:46 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 21:16:46 INFO  time: compiled project-0- in 80ms[0m
+[0m2021.04.24 21:16:57 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 21:16:57 INFO  time: compiled project-0- in 0.79s[0m
+[0m2021.04.24 21:17:42 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 21:17:42 INFO  time: compiled project-0- in 0.62s[0m
+[0m2021.04.24 21:18:42 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 21:18:42 INFO  time: compiled project-0- in 86ms[0m
+[0m2021.04.24 21:18:51 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 21:18:51 INFO  time: compiled project-0- in 88ms[0m
+[0m2021.04.24 21:18:56 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 21:18:56 INFO  time: compiled project-0- in 0.59s[0m
+[0m2021.04.24 21:19:07 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 21:19:07 INFO  time: compiled project-0- in 0.58s[0m
+Apr 24, 2021 9:36:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5849
+something's wrong: no file:///home/timmiller/myfolder/Project%5B0%5D/project%5B0%5D/src/main/scala/Project0/Main.scala in Array[String]RangePosition(file:///home/timmiller/myfolder/Project%5B0%5D/project%5B0%5D/src/main/scala/Project0/Main.scala, 135, 135, 148)
+[0m2021.04.24 21:36:50 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 21:36:50 INFO  time: compiled project-0- in 0.42s[0m
+[0m2021.04.24 21:37:09 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 21:37:09 INFO  time: compiled project-0- in 0.55s[0m
+[0m2021.04.24 21:37:31 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 21:37:31 INFO  time: compiled project-0- in 0.51s[0m
+[0m2021.04.24 21:37:44 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 21:37:44 INFO  time: compiled project-0- in 0.35s[0m
+Apr 24, 2021 9:37:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5979
+Apr 24, 2021 11:51:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6482
+[0m2021.04.24 23:52:30 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 23:52:30 INFO  time: compiled project-0- in 78ms[0m
+[0m2021.04.24 23:52:57 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 23:52:57 INFO  time: compiled project-0- in 79ms[0m
+[0m2021.04.24 23:53:23 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.24 23:53:23 INFO  time: compiled project-0- in 0.5s[0m
+Apr 24, 2021 11:59:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6758
+[0m2021.04.25 00:00:50 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 00:00:50 INFO  time: compiled project-0- in 0.44s[0m
+[0m2021.04.25 00:01:03 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 00:01:03 INFO  time: compiled project-0- in 0.45s[0m
+[0m2021.04.25 00:01:34 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 00:01:34 INFO  time: compiled project-0- in 0.58s[0m
+[0m2021.04.25 00:01:41 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 00:01:41 INFO  time: compiled project-0- in 0.58s[0m
+Apr 25, 2021 12:01:52 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7208
+[0m2021.04.25 00:01:52 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 00:01:52 INFO  time: compiled project-0- in 0.59s[0m
+[0m2021.04.25 00:02:38 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 00:02:38 INFO  time: compiled project-0- in 0.59s[0m
+[0m2021.04.25 00:08:19 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 00:08:19 INFO  time: compiled project-0- in 77ms[0m
+[0m2021.04.25 00:08:25 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 00:08:25 INFO  time: compiled project-0- in 0.58s[0m
+Apr 25, 2021 1:07:16 AM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: String index out of range: -1
+[0m2021.04.25 01:08:16 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:08:16 INFO  time: compiled project-0- in 0.58s[0m
+Apr 25, 2021 1:08:21 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7772
+Apr 25, 2021 1:08:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7778
+Apr 25, 2021 1:08:45 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7789
+Apr 25, 2021 1:08:47 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7795
+[0m2021.04.25 01:12:44 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:12:44 INFO  time: compiled project-0- in 73ms[0m
+[0m2021.04.25 01:12:53 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:12:53 INFO  time: compiled project-0- in 89ms[0m
+[0m2021.04.25 01:13:17 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/LoginCli.scala:69:21: stale bloop error: not found: value data
+                    data.arr.foreach(x=>{
+                    ^^^^[0m
+[0m2021.04.25 01:13:17 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/LoginCli.scala:69:21: stale bloop error: not found: value data
+                    data.arr.foreach(x=>{
+                    ^^^^[0m
+[0m2021.04.25 01:13:23 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/LoginCli.scala:69:21: stale bloop error: not found: value data
+                    data.arr.foreach(x=>{
+                    ^^^^[0m
+[0m2021.04.25 01:13:23 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/LoginCli.scala:69:21: stale bloop error: not found: value data
+                    data.arr.foreach(x=>{
+                    ^^^^[0m
+[0m2021.04.25 01:13:32 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:13:32 INFO  time: compiled project-0- in 74ms[0m
+[0m2021.04.25 01:13:46 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:13:46 INFO  time: compiled project-0- in 0.6s[0m
+Apr 25, 2021 1:14:04 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8416
+Apr 25, 2021 1:14:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8422
+Apr 25, 2021 1:14:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8428
+Apr 25, 2021 1:14:50 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8438
+[0m2021.04.25 01:16:20 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:16:20 INFO  time: compiled project-0- in 0.89s[0m
+[0m2021.04.25 01:17:33 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:17:33 INFO  time: compiled project-0- in 0.55s[0m
+[0m2021.04.25 01:19:03 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:19:03 INFO  time: compiled project-0- in 84ms[0m
+[0m2021.04.25 01:19:10 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:19:10 INFO  time: compiled project-0- in 0.58s[0m
+[0m2021.04.25 01:19:53 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:19:53 INFO  time: compiled project-0- in 0.58s[0m
+Apr 25, 2021 1:19:56 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8828
+Apr 25, 2021 1:20:48 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8834
+Apr 25, 2021 1:20:50 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8840
+[0m2021.04.25 01:20:59 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:20:59 INFO  time: compiled project-0- in 0.58s[0m
+[0m2021.04.25 01:21:10 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:21:10 INFO  time: compiled project-0- in 0.57s[0m
+Apr 25, 2021 1:22:54 AM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: String index out of range: -1
+[0m2021.04.25 01:24:04 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:24:04 INFO  time: compiled project-0- in 0.58s[0m
+[0m2021.04.25 01:24:16 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:24:16 INFO  time: compiled project-0- in 0.58s[0m
+[0m2021.04.25 01:25:05 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:25:05 INFO  time: compiled project-0- in 0.58s[0m
+[0m2021.04.25 01:25:52 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:25:52 INFO  time: compiled project-0- in 89ms[0m
+[0m2021.04.25 01:25:57 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:25:57 INFO  time: compiled project-0- in 0.59s[0m
+[0m2021.04.25 01:26:40 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:26:40 INFO  time: compiled project-0- in 0.62s[0m
+[0m2021.04.25 01:27:30 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:27:30 INFO  time: compiled project-0- in 0.62s[0m
+[0m2021.04.25 01:27:40 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:27:40 INFO  time: compiled project-0- in 0.59s[0m
+Apr 25, 2021 1:27:43 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9465
+Apr 25, 2021 1:28:13 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9471
+Apr 25, 2021 1:28:15 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9478
+Apr 25, 2021 1:28:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9485
+[0m2021.04.25 01:28:39 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:28:39 INFO  time: compiled project-0- in 0.63s[0m
+[0m2021.04.25 01:29:32 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:29:32 INFO  time: compiled project-0- in 0.62s[0m
+[0m2021.04.25 01:30:35 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:30:35 INFO  time: compiled project-0- in 0.61s[0m
+Apr 25, 2021 1:31:48 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9728
+[0m2021.04.25 01:33:07 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:33:07 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+[0m2021.04.25 01:33:07 INFO  time: compiled project-0- in 0.67s[0m
+Apr 25, 2021 1:33:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9884
+[0m2021.04.25 01:33:31 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:33:31 INFO  time: compiled project-0- in 0.1s[0m
+[0m2021.04.25 01:33:37 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:33:37 INFO  time: compiled project-0- in 0.63s[0m
+[0m2021.04.25 01:33:53 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:33:53 INFO  time: compiled project-0- in 0.61s[0m
+[0m2021.04.25 01:34:43 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:34:43 INFO  time: compiled project-0- in 0.62s[0m
+[0m2021.04.25 01:34:50 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:34:50 INFO  time: compiled project-0- in 0.88s[0m
+[0m2021.04.25 01:35:10 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:35:10 INFO  time: compiled project-0- in 0.98s[0m
+[0m2021.04.25 01:35:22 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 01:35:22 INFO  time: compiled project-0- in 0.6s[0m
+[0m2021.04.25 10:17:12 INFO  Started: Metals version 0.10.2 in workspace '/home/timmiller/myfolder/Project[0]/project[0]' for client vscode 1.55.2.[0m
+[0m2021.04.25 10:17:13 INFO  time: initialize in 0.4s[0m
+[0m2021.04.25 10:17:12 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher7827973614871578501/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.04.25 10:17:13 WARN  no build target for: /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/LoginCli.scala[0m
+[0m2021.04.25 10:17:13 WARN  no build target for: /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Dao.scala[0m
+[0m2021.04.25 10:17:13 INFO  skipping build import with status 'Installed'[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher7827973614871578501/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher7827973614871578501/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.25 10:17:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.25 10:17:13 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher5177757496396810694/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher5177757496396810694/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher5177757496396810694/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.25 10:17:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/timmiller/.cache/metals/bsp.trace.json[0m
+[0m2021.04.25 10:17:13 INFO  time: Connected to build server in 0.36s[0m
+[0m2021.04.25 10:17:13 INFO  Connected to Build server: Bloop v1.4.8-19-4d9f966b[0m
+[0m2021.04.25 10:17:14 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+[0m2021.04.25 10:17:16 INFO  no build target: using presentation compiler with only scala-library: 2.13.3[0m
+[0m2021.04.25 10:17:16 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.04.25 10:17:16 INFO  time: indexed workspace in 2.58s[0m
+[0m2021.04.25 10:17:19 INFO  time: code lens generation in 6.46s[0m
+[0m2021.04.25 10:22:08 INFO  shutting down Metals[0m
+[0m2021.04.25 10:22:08 INFO  Shut down connection with build server.[0m
+[0m2021.04.25 10:22:08 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+Apr 25, 2021 10:25:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 176
+Apr 25, 2021 10:25:49 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 183
+[0m2021.04.25 10:26:00 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:26:00 INFO  time: compiled project-0- in 0.35s[0m
+Apr 25, 2021 10:26:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 230
+Apr 25, 2021 10:27:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 238
+Apr 25, 2021 10:27:46 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 250
+Apr 25, 2021 10:27:50 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 257
+[0m2021.04.25 10:27:56 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:27:56 INFO  time: compiled project-0- in 0.43s[0m
+Apr 25, 2021 10:28:03 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 268
+[0m2021.04.25 10:28:52 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:28:52 INFO  time: compiled project-0- in 0.56s[0m
+[0m2021.04.25 10:31:50 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:31:50 INFO  time: compiled project-0- in 0.57s[0m
+[0m2021.04.25 10:48:22 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:48:22 INFO  time: compiled project-0- in 0.11s[0m
+[0m2021.04.25 10:48:51 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:48:51 INFO  time: compiled project-0- in 0.58s[0m
+[0m2021.04.25 10:49:14 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:49:14 INFO  time: compiled project-0- in 0.57s[0m
+[0m2021.04.25 10:51:43 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:51:43 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+[0m2021.04.25 10:51:43 INFO  time: compiled project-0- in 0.56s[0m
+Apr 25, 2021 10:51:59 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1597
+Apr 25, 2021 10:52:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1604
+[0m2021.04.25 10:52:03 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:52:03 INFO  time: compiled project-0- in 0.57s[0m
+Apr 25, 2021 10:52:09 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1613
+Apr 25, 2021 10:52:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1646
+[0m2021.04.25 10:52:22 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:52:22 INFO  time: compiled project-0- in 0.6s[0m
+Apr 25, 2021 10:52:22 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1663
+[0m2021.04.25 10:52:32 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:52:32 INFO  time: compiled project-0- in 0.34s[0m
+[0m2021.04.25 10:52:41 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:52:41 INFO  time: compiled project-0- in 0.37s[0m
+[0m2021.04.25 10:54:48 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:54:48 INFO  time: compiled project-0- in 0.47s[0m
+[0m2021.04.25 10:55:43 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:55:43 INFO  time: compiled project-0- in 88ms[0m
+[0m2021.04.25 10:56:20 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:56:20 INFO  time: compiled project-0- in 97ms[0m
+[0m2021.04.25 10:56:57 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:56:57 INFO  time: compiled project-0- in 0.49s[0m
+[0m2021.04.25 10:57:16 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:57:16 INFO  time: compiled project-0- in 0.49s[0m
+[0m2021.04.25 10:57:27 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:57:27 INFO  time: compiled project-0- in 0.46s[0m
+[0m2021.04.25 10:58:11 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:58:11 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+[0m2021.04.25 10:58:11 INFO  time: compiled project-0- in 0.49s[0m
+[0m2021.04.25 10:58:20 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:58:20 INFO  time: compiled project-0- in 0.48s[0m
+[0m2021.04.25 10:58:28 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:58:28 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+[0m2021.04.25 10:58:28 INFO  time: compiled project-0- in 0.46s[0m
+[0m2021.04.25 10:59:29 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 10:59:29 INFO  time: compiled project-0- in 0.1s[0m
+Apr 25, 2021 11:00:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2278
+[0m2021.04.25 11:00:35 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:00:35 INFO  time: compiled project-0- in 75ms[0m
+[0m2021.04.25 11:00:46 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:00:46 INFO  time: compiled project-0- in 67ms[0m
+[0m2021.04.25 11:01:54 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:01:54 INFO  time: compiled project-0- in 74ms[0m
+[0m2021.04.25 11:02:14 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:13:5: stale bloop error: not enough arguments for method addOne: (elem: ujson.Value): scala.collection.mutable.ArrayBuffer[ujson.Value].
+Unspecified value parameter elem.
+    jsonData.get.arr.addOne()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.04.25 11:02:14 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:13:5: stale bloop error: not enough arguments for method addOne: (elem: ujson.Value): scala.collection.mutable.ArrayBuffer[ujson.Value].
+Unspecified value parameter elem.
+    jsonData.get.arr.addOne()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.04.25 11:02:15 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:13:5: stale bloop error: not enough arguments for method addOne: (elem: ujson.Value): scala.collection.mutable.ArrayBuffer[ujson.Value].
+Unspecified value parameter elem.
+    jsonData.get.arr.addOne()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.04.25 11:02:15 INFO  /home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/Main.scala:13:5: stale bloop error: not enough arguments for method addOne: (elem: ujson.Value): scala.collection.mutable.ArrayBuffer[ujson.Value].
+Unspecified value parameter elem.
+    jsonData.get.arr.addOne()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.04.25 11:02:26 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:02:26 INFO  time: compiled project-0- in 93ms[0m
+[0m2021.04.25 11:02:31 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:02:31 WARN  2 deprecations; re-run with -deprecation for details[0m
+[0m2021.04.25 11:02:31 INFO  time: compiled project-0- in 0.51s[0m
+[0m2021.04.25 11:03:43 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:03:43 INFO  time: compiled project-0- in 0.52s[0m
+[0m2021.04.25 11:03:51 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:03:51 INFO  time: compiled project-0- in 0.56s[0m
+[0m2021.04.25 11:04:20 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:04:20 INFO  time: compiled project-0- in 0.48s[0m
+Apr 25, 2021 11:04:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2666
+Apr 25, 2021 11:06:12 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2889
+[0m2021.04.25 11:06:23 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:06:23 INFO  time: compiled project-0- in 0.12s[0m
+[0m2021.04.25 11:07:01 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:07:01 INFO  time: compiled project-0- in 0.83s[0m
+[0m2021.04.25 11:07:26 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:07:27 INFO  time: compiled project-0- in 1.19s[0m
+[0m2021.04.25 11:08:14 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:08:14 INFO  time: compiled project-0- in 0.12s[0m
+[0m2021.04.25 11:08:27 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:08:27 INFO  time: compiled project-0- in 0.74s[0m
+[0m2021.04.25 11:11:00 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:11:00 INFO  time: compiled project-0- in 0.14s[0m
+[0m2021.04.25 11:11:08 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:11:08 INFO  time: compiled project-0- in 0.71s[0m
+[0m2021.04.25 11:11:46 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:11:46 INFO  time: compiled project-0- in 0.71s[0m
+Apr 25, 2021 11:12:38 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3369
+Apr 25, 2021 11:13:10 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3376
+Apr 25, 2021 11:14:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3733
+[0m2021.04.25 11:15:31 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:15:31 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+[0m2021.04.25 11:15:31 INFO  time: compiled project-0- in 0.74s[0m
+Apr 25, 2021 11:15:37 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3750
+[0m2021.04.25 11:15:45 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:15:45 INFO  time: compiled project-0- in 69ms[0m
+[0m2021.04.25 11:15:56 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:15:57 INFO  time: compiled project-0- in 1.06s[0m
+Apr 25, 2021 11:16:12 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3798
+Apr 25, 2021 11:16:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3804
+Apr 25, 2021 11:16:42 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3809
+[0m2021.04.25 11:17:33 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:17:33 INFO  time: compiled project-0- in 0.98s[0m
+[0m2021.04.25 11:21:36 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:21:36 INFO  time: compiled project-0- in 0.89s[0m
+Apr 25, 2021 11:21:43 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4511
+[0m2021.04.25 11:21:51 INFO  compiling project-0- (1 scala source)[0m
+[0m2021.04.25 11:21:51 INFO  time: compiled project-0- in 0.35s[0m
+Apr 25, 2021 11:21:59 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
