@@ -5,6 +5,7 @@ import scala.collection.mutable.ArrayBuffer
 
 object Main {
   def main(args: Array[String]):Unit= {    
+    FileUtil.makeJson()
     Cli.welcomeMenu()
   }
 }

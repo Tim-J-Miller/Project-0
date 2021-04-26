@@ -18,7 +18,7 @@
         "classpath": [
             "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/sbt/1.4.9/sbt-1.4.9.jar",
             "/home/timmiller/.sbt/boot/scala-2.12.12/lib/scala-library.jar",
-            "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.4.8/sbt-bloop-1.4.8.jar",
+            "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.4.8-19-4d9f966b/sbt-bloop-1.4.8-19-4d9f966b.jar",
             "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/main_2.12/1.4.9/main_2.12-1.4.9.jar",
             "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/io_2.12/1.4.0/io_2.12-1.4.0.jar",
             "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.5.0/jna-5.5.0.jar",
@@ -208,12 +208,12 @@
                 {
                     "organization": "ch.epfl.scala",
                     "name": "sbt-bloop",
-                    "version": "1.4.8",
+                    "version": "1.4.8-19-4d9f966b",
                     "configurations": "default",
                     "artifacts": [
                         {
                             "name": "sbt-bloop",
-                            "path": "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.4.8/sbt-bloop-1.4.8.jar"
+                            "path": "/home/timmiller/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.4.8-19-4d9f966b/sbt-bloop-1.4.8-19-4d9f966b.jar"
                         }
                     ]
                 },

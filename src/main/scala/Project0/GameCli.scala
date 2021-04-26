@@ -11,38 +11,9 @@ object GameCli{
     //********DO NOT TOUCH
 
     val commandArgPattern: Regex = "(\\w+)\\s+(\\w+)\\s*(.*)".r
-    //def run(player: Player):Unit = {
+    
     def run():Unit = {
         
-        //p = player
-
-        
-    /*      functions for handling followers
-
-            //adding followers
-            p.followers.addOne(Follower("Frank", 5))
-            p.followers.addOne(Follower("Steve",44))
-            p.followers.addOne(Follower("Frank",2))
-
-           //print all followers
-           p.followers.foreach(x => println(s"${x.name} has ${x.HP} hp"))
-    
-           //damage all
-           p.followers.foreach(x => {x.HP = x.HP - 10})
-        
-           //damage conditionally
-           p.followers.foreach(x => {
-               if (x.name == "Steve"){
-                   x.HP = x.HP - 10
-               }
-           })
-
-           //remove dead followers
-           p.followers = p.followers.filter(x => x.HP > 0)
-
-           //print all followers
-           p.followers.foreach(x => println(s"${x.name} has ${x.HP} hp"))
-    */      
             var gameLoop = true
             var townMenuLoop = true
             var tavernMenuLoop = false
@@ -75,14 +46,17 @@ object GameCli{
                             checkFollowers()
                         }
                         case x if (x.equalsIgnoreCase("Save")) => {
-                            save(p)
+                            save()
+                        }
+                        case x if (x.equalsIgnoreCase("Delete")) => {
+                            delete()
                         }
                         case x if (x.equalsIgnoreCase("Exit")) => {
                             townMenuLoop = false
                             tavernMenuLoop = false
                             dungeonMenuLoop = false
                             gameLoop = false
-                            save(p)
+                            save()
                         }
                         case _ => {
                             println("Failed to parse a command")
@@ -109,14 +83,17 @@ object GameCli{
                             dungeonMenuLoop = false
                         }
                         case x if (x.equalsIgnoreCase("Save")) => {
-                            save(p)
+                            save()
+                        }
+                        case x if (x.equalsIgnoreCase("Delete")) => {
+                            delete()
                         }
                         case x if (x.equalsIgnoreCase("Exit")) => {
                             townMenuLoop = false
                             tavernMenuLoop = false
                             dungeonMenuLoop = false
                             gameLoop = false
-                            save(p)
+                            save()
                         }
                         case _ => {
                             println("Failed to parse a command")
@@ -185,7 +162,7 @@ object GameCli{
     def checkFollowers() = {
         p.followers.foreach(x => println(s"${x.name} has ${x.HP} hp"))
     }
-    def save(player: Player) = {
+    def save() = {
         if(Dao.updatePlayer()){
             if(Dao.deleteFollowers()){
                 if(p.followers.length > 0){
@@ -208,6 +185,33 @@ object GameCli{
             println("error saving")
         }
     }
+    def delete() = {
+        println("Are you sure? \nY/N")
+        var input = StdIn.readLine()
+        if (input.equalsIgnoreCase("Y")){
+            println("Are you Really sure? \nY/N")
+            input = StdIn.readLine()
+            if (input.equalsIgnoreCase("Y")){
+                println("Cause there is no going back once you go through with this. \nY/N")
+                input = StdIn.readLine()
+                if (input.equalsIgnoreCase("Y")){
+                    println("Alright")
+                    if(Dao.deletePlayer()){
+                        var json = FileUtil.getJson()
+                        if (json != None) {
+                            val x = json.get.arr.indexOf(ujson.Obj("playerName"->GameCli.p.playerName, "characterName"->GameCli.p.characterName))
+                            json.get.arr.remove(x)
+                            os.write(os.pwd/"players.json",json.get)
+                        }
+                        println("Deleted your save")
+                    }
+                    else{
+                        println("error deleting save")
+                    }
+                }
+            }
+        }
+    }
     def printTownMenuOptions():Unit = {
         List(
             "You find yourself in the town square",
@@ -217,6 +221,7 @@ object GameCli{
             "Go to tavern: hire some followers who will fight on your behaf",
             "Go to dungeon: lead your followers into the dungeon to find riches",
             "Save: save the game",
+            "Delete: delete your save file from the database",
             "Exit: exit the game"
         ).foreach(println)
     }
@@ -228,6 +233,7 @@ object GameCli{
             "Hire follower [gold amount]: Offer the specified amount of gold to hire a new follower \n\t (larger amounts will higher stronger followers)",
             "Leave tavern: return to the town square",
             "Save: save the game",
+            "Delete: delete your save file from the database",
             "Exit: exit the game"
         ).foreach(println)
     }

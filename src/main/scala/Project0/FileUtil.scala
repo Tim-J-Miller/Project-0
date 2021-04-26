@@ -5,6 +5,16 @@ import scala.collection.mutable.ArrayBuffer
 import ujson.Value
 
 object FileUtil {
+    def makeJson() ={
+        try{
+            val jsonString = os.read(os.pwd/"players.json")
+        }
+        catch {
+            case e: NoSuchFileException => {
+                os.write(os.pwd/"players.json", ujson.Obj())
+            }
+        }  
+    }
     def getJson():Option[Value.Value] ={
         try{
             val jsonString = os.read(os.pwd/"players.json")
