@@ -1,4 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0m/home/timmiller/myfolder/Project[0]/project[0]/src/main/scala/Project0/GameCli.scala:233:60: not found: value jsonData[0m
-[0m[[0m[31merror[0m] [0m[0m                            os.write(os.pwd/"players.json",jsonData.get)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                           ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[33mwarn[0m] [0m[0m1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

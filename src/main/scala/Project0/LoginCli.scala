@@ -55,46 +55,59 @@ object Cli{
                 playerNames.get.foreach(println)
                 var input = StdIn.readLine()
                 if (playerNames.get.contains(input)){ 
-                    jsonData.arr.foreach(x=>{
+                    jsonData.get.arr.foreach(x=>{
                         if (x.apply("playerName").str == input) {
                             println("Are you sure you want to sign in as " + input + "\t" + x.apply("characterName").str + "\nY/N")
                         }
                     })
-                    input = StdIn.readLine()
-                    if (input.equalsIgnoreCase("Y")){
+                    var yORn = StdIn.readLine()
+                    if (yORn.equalsIgnoreCase("Y")){
+                        loginMenuLoop = false
                         if(Dao.loadPlayer(input)){
                             if(Dao.loadFollowers()){  
                                 GameCli.run()
-                                loginMenuLoop = false
+                            }
+                            else {
+                                println(Dao.loadFollowers())
+                                println("follower")
                             }
                         }
+                        else {
+                            println(Dao.loadPlayer(input))
+                            println("player")
+                        }
+                    }
+                    else{
+                        println(input)
                     }
                 }
-                else{
+                else if (loginMenuLoop){
                     println("Are you sure you want to sign in as " + input +"\t[character name not stored locally]\nY/N")
-                    input = StdIn.readLine()
+                    var yORn  = StdIn.readLine()
                     if (input.equalsIgnoreCase("Y")){
+                        loginMenuLoop = false
                         if(Dao.loadPlayer(input)){
                             if(Dao.loadFollowers()){  
                                 jsonData.get.arr.addOne(ujson.Obj("playerName"->GameCli.p.playerName,"characterName"->GameCli.p.characterName))
                                 os.write(os.pwd/"players.json",jsonData.get)
                                 GameCli.run()
-                                loginMenuLoop = false
                             }
                         }
                     }
                 }
             }
-            else{
+            else if(loginMenuLoop){
                 println("Please enter the username you would like to sign in with\n")
                 var input = StdIn.readLine()
-                if (input.equalsIgnoreCase("Y")){
+                println("Are you sure you want to sign in as " + input +"\nY/N")
+                var yORn = StdIn.readLine()
+                if (yORn.equalsIgnoreCase("Y")){
+                    loginMenuLoop = false
                     if(Dao.loadPlayer(input)){
                         if(Dao.loadFollowers()){ 
                             jsonData.get.arr.addOne(ujson.Obj("playerName"->GameCli.p.playerName,"characterName"->GameCli.p.characterName))
                             os.write(os.pwd/"players.json",jsonData.get) 
                             GameCli.run()
-                            loginMenuLoop = false
                         }
                     }
                 }
