@@ -86,6 +86,10 @@ object GameCli{
                             save()
                         }
                         case x if (x.equalsIgnoreCase("Delete")) => {
+                            townMenuLoop = false
+                            tavernMenuLoop = false
+                            dungeonMenuLoop = false
+                            gameLoop = false
                             delete()
                         }
                         case x if (x.equalsIgnoreCase("Exit")) => {
