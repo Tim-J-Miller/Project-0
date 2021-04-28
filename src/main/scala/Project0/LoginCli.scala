@@ -22,11 +22,9 @@ object Cli{
             input match {
                 case commandArgPattern(cmd, arg) if cmd.equalsIgnoreCase("login") => {
                     if (arg.isEmpty()) loginMenu() else loginMenu(arg.toLowerCase())
-                    welcomeMenuLoop = false
                 }
                 case commandArgPattern(cmd, arg) if cmd.equalsIgnoreCase("create") => {
                     if (arg.isEmpty()) createMenu() else createMenu(arg.toLowerCase())
-                    welcomeMenuLoop = false
                 }
                 case commandArgPattern(cmd, arg) if cmd.equalsIgnoreCase("exit") => {
                     welcomeMenuLoop = false
@@ -39,7 +37,6 @@ object Cli{
                 }
             }
         }
-        if (GameCli.p == Player()) println("No Player") else GameCli.run()
     }
     
     def loginMenu():Unit = {
@@ -56,7 +53,7 @@ object Cli{
                 if (playerNames.get.contains(input)){ 
                     jsonData.get.arr.foreach(x=>{
                         if (x.apply("playerName").str.equalsIgnoreCase(input)) {
-                            println("Are you sure you want to sign in as Username: " + input + "\tCharacter name: " + x.apply("characterName").str + "\nY/N")
+                            println("Are you sure you want to sign in as Username: " + input + "\tCharacter name: " + x.apply("characterName").str + "\nY/N\n")
                         }
                     })
                     var yORn = StdIn.readLine()
@@ -67,11 +64,14 @@ object Cli{
                                 Dao.loadFollowers() 
                                 GameCli.run()
                             }
+                            else{
+                                if (GameCli.p == Player()) println("No Player")
+                            }
                         }
                     }
                 }
                 else if (loginMenuLoop){
-                    println("Are you sure you want to sign in as Username: " + input +"\t[character name not stored locally]\nY/N")
+                    println("Are you sure you want to sign in as Username: " + input +"\t[character name not stored locally]\nY/N\n")
                     var yORn  = StdIn.readLine()
                     if (yORn.equalsIgnoreCase("Y")){
                         loginMenuLoop = false
@@ -82,6 +82,9 @@ object Cli{
                                 os.write.over(os.pwd/"players.json",jsonData.get)
                                 GameCli.run()
                             }
+                            else{
+                                if (GameCli.p == Player()) println("No Player")
+                            }
                         }
                     }
                 }
@@ -89,7 +92,7 @@ object Cli{
             else if(loginMenuLoop){
                 println("Please enter the username you would like to sign in with\n")
                 var input = StdIn.readLine()
-                println("Are you sure you want to sign in as Username: " + input +"\nY/N")
+                println("Are you sure you want to sign in as Username: " + input +"\nY/N\n")
                 var yORn = StdIn.readLine()
                 if (yORn.equalsIgnoreCase("Y")){
                     loginMenuLoop = false
@@ -99,6 +102,9 @@ object Cli{
                             jsonData.get.arr.addOne(ujson.Obj("playerName"->GameCli.p.playerName,"characterName"->GameCli.p.characterName))
                             os.write.over(os.pwd/"players.json",jsonData.get) 
                             GameCli.run()
+                        }
+                        else{
+                            if (GameCli.p == Player()) println("No Player")
                         }
                     }
                 }
@@ -110,12 +116,14 @@ object Cli{
         var jsonData = FileUtil.getJson()
         val playerNames = FileUtil.getPlayerNames()
         if(Dao.loadPlayer(name)){
-            if(Dao.loadFollowers()){ 
-                if (!playerNames.get.contains(name)){
-                jsonData.get.arr.addOne(ujson.Obj("playerName"->GameCli.p.playerName,"characterName"->GameCli.p.characterName))
-                os.write.over(os.pwd/"players.json",jsonData.get) 
+            if (GameCli.p.playerName != ""){
+                if(Dao.loadFollowers()){ 
+                    if (!playerNames.get.contains(name)){
+                    jsonData.get.arr.addOne(ujson.Obj("playerName"->GameCli.p.playerName,"characterName"->GameCli.p.characterName))
+                    os.write.over(os.pwd/"players.json",jsonData.get) 
+                    }
+                    GameCli.run()
                 }
-                GameCli.run()
             }
         }
         else{
@@ -132,10 +140,12 @@ object Cli{
             var characternameInput = StdIn.readLine()
             if(Dao.createPlayer(usernameInput, characternameInput)){
                 if(Dao.loadPlayer(usernameInput)){
-                    jsonData.get.arr.addOne(ujson.Obj("playerName"->GameCli.p.playerName,"characterName"->GameCli.p.characterName))
-                    os.write.over(os.pwd/"players.json",jsonData.get)
-                    println("Welcome to the game, visit the tavern first to aquire some followers before entering the dungeon")
-                    GameCli.run()
+                    if (GameCli.p.playerName != ""){
+                        jsonData.get.arr.addOne(ujson.Obj("playerName"->GameCli.p.playerName,"characterName"->GameCli.p.characterName))
+                        os.write.over(os.pwd/"players.json",jsonData.get)
+                        println("Welcome to the game, visit the tavern first to aquire some followers before entering the dungeon")
+                        GameCli.run()
+                    }
                 }
             }
             createMenuLoop=false
@@ -147,10 +157,12 @@ object Cli{
         var characternameInput = StdIn.readLine()
         if(Dao.createPlayer(name, characternameInput)){
             if(Dao.loadPlayer(name)){
-                jsonData.get.arr.addOne(ujson.Obj("playerName"->GameCli.p.playerName,"characterName"->GameCli.p.characterName))
-                os.write.over(os.pwd/"players.json",jsonData.get)
-                println("Welcome to the game, visit the tavern first to aquire some followers before entering the dungeon")
-                GameCli.run()  
+                if (GameCli.p.playerName != ""){
+                    jsonData.get.arr.addOne(ujson.Obj("playerName"->GameCli.p.playerName,"characterName"->GameCli.p.characterName))
+                    os.write.over(os.pwd/"players.json",jsonData.get)
+                    println("Welcome to the game, visit the tavern first to aquire some followers before entering the dungeon")
+                    GameCli.run()
+                }
             }      
         }
         else{
@@ -165,7 +177,7 @@ object Cli{
         List(
             "Login: Sign in with an existing ID",
             "Create: Create a new ID",
-            "exit: exits WC CLI:"
+            "exit: exits WC CLI:\n"
             ).foreach(println)
     }
 }

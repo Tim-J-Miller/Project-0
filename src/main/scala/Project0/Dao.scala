@@ -100,7 +100,6 @@ object Dao {
             try{
                 val stmt = conOpt.get.prepareStatement("SELECT follower_name, hp FROM followers LEFT JOIN players ON players.player_id = followers.player_id WHERE player_name = ?;")
                 stmt.setString(1, GameCli.p.playerName)
-                println(stmt)
                 stmt.execute()
                 
                 val rs = stmt.getResultSet()

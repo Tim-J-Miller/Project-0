@@ -190,13 +190,13 @@ object GameCli{
         }
     }
     def delete() = {
-        println("Are you sure? \nY/N")
+        println("Are you sure? Y/N\n")
         var input = StdIn.readLine()
         if (input.equalsIgnoreCase("Y")){
-            println("Are you Really sure? \nY/N")
+            println("Are you Really sure? Y/N\n")
             input = StdIn.readLine()
             if (input.equalsIgnoreCase("Y")){
-                println("Cause there is no going back once you go through with this. \nY/N")
+                println("Cause there is no going back once you go through with this. Y/N\n")
                 input = StdIn.readLine()
                 if (input.equalsIgnoreCase("Y")){
                     println("Alright")
@@ -226,7 +226,7 @@ object GameCli{
             "Go to dungeon: lead your followers into the dungeon to find riches",
             "Save: save the game",
             "Delete: delete your save file from the database",
-            "Exit: exit the game"
+            "Exit: exit the game\n"
         ).foreach(println)
     }
     def printTavernMenuOptions():Unit = {
@@ -238,7 +238,7 @@ object GameCli{
             "Leave tavern: return to the town square",
             "Save: save the game",
             "Delete: delete your save file from the database",
-            "Exit: exit the game"
+            "Exit: exit the game\n"
         ).foreach(println)
     }
     def printDungeonMenuOptions(floor: Int, loot: Int):Unit ={
@@ -247,7 +247,7 @@ object GameCli{
             s"${p.followers.length} followers still survive",
             "What would you like to do?\n",
             "Push Through: your followers will clear the way to the next floor\n\t there's more gold to be had but risk loosing followers",
-            "Leave dungeon: return to town to add the gathered gold to your own"
+            "Leave dungeon: return to town to add the gathered gold to your own\n"
         ).foreach(println)
     }
 }
