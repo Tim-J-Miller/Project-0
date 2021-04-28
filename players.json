@@ -1,10 +1,1 @@
-[
-  {
-    "playerName": "Tim",
-    "characterName": "Heros Tempus"
-  },
-  {
-    "playerName": "Pat",
-    "characterName": "Fractos Deus"
-  }
-]
+[{"playerName":"Tim","characterName":"Heros Tempus"},{"playerName":"Pat","characterName":"Fractos Deus"}]

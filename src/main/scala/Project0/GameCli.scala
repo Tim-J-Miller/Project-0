@@ -13,7 +13,7 @@ object GameCli{
     val commandArgPattern: Regex = "(\\w+)\\s+(\\w+)\\s*(.*)".r
     
     def run():Unit = {
-        
+        println(s"Welcome to the town ${GameCli.p.characterName}")
             var gameLoop = true
             var townMenuLoop = true
             var tavernMenuLoop = false
@@ -201,7 +201,7 @@ object GameCli{
                         if (json != None) {
                             val x = json.get.arr.indexOf(ujson.Obj("playerName"->GameCli.p.playerName, "characterName"->GameCli.p.characterName))
                             json.get.arr.remove(x)
-                            os.write(os.pwd/"players.json",json.get)
+                            os.write.over(os.pwd/"players.json",json.get)
                         }
                         println("Deleted your save")
                     }
